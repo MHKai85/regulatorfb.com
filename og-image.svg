@@ -1,17 +1,15 @@
 <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="630" fill="#1a365d"/>
-  <rect x="0" y="560" width="1200" height="70" fill="#0f2440"/>
+  <rect x="0" y="570" width="1200" height="60" fill="#0f2440"/>
   <!-- Accent line -->
   <rect x="80" y="200" width="60" height="4" fill="#c05621"/>
-  <!-- Brand name -->
-  <text x="80" y="280" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">REGULATOR</text>
-  <text x="632" y="280" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#c05621" letter-spacing="-1">.</text>
-  <text x="660" y="280" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">FB</text>
+  <!-- Brand name - tighter spacing with interpunct -->
+  <text x="80" y="280" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">REGULATOR<tspan fill="#c05621">&#8201;·&#8201;</tspan>FB</text>
   <!-- Tagline -->
   <text x="80" y="340" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.7)">Food &amp; Beverage Regulatory Intelligence</text>
   <!-- Description -->
   <text x="80" y="420" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.5)">FDA recalls · USDA rules · Labeling changes · Compliance deadlines</text>
   <text x="80" y="455" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.5)">Scanned, classified, and delivered daily.</text>
   <!-- URL -->
-  <text x="80" y="600" font-family="Arial, sans-serif" font-size="20" fill="#c05621">regulatorfb.com</text>
+  <text x="80" y="605" font-family="Arial, sans-serif" font-size="20" fill="#c05621">regulatorfb.com</text>
 </svg>
