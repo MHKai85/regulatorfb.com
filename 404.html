@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Redirecting — Regulator · FB</title>
+<script>
+// GitHub Pages SPA trick: catch /s/{id} paths and redirect to /s/?id={slug}
+var path = window.location.pathname;
+var match = path.match(/^\/s\/(.+)$/);
+if (match) {
+  window.location.replace('/s/?id=' + match[1]);
+} else {
+  // Actual 404 — redirect to home
+  window.location.replace('https://regulatorfb.com');
+}
+</script>
+</head>
+<body></body>
+</html>
