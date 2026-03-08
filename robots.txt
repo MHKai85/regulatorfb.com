@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://regulatorfb.com/sitemap.xml
