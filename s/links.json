@@ -19,5 +19,6 @@
   "f2e84d": "https://www.osha.gov/news/newsreleases/chicago/20260316",
   "a44a3c": "https://www.federalregister.gov/documents/2026/03/17/2026-05214/initiation-of-section-301-investigations-acts-policies-and-practices-of-certain-economies-relating",
   "b9fe9a": "http://www.fda.gov/news-events/press-announcements/fda-launches-new-adverse-event-look-tool",
-  "c34c19": "https://texasagriculture.gov/News-Events/Article/10810/Commissioner-Miller-Applauds-FDA-Emergency-Authorization-of-New-Tool-to-Combat"
+  "c34c19": "https://texasagriculture.gov/News-Events/Article/10810/Commissioner-Miller-Applauds-FDA-Emergency-Authorization-of-New-Tool-to-Combat",
+  "150b68": "https://api.fda.gov/food/enforcement.json?search=recall_number:H-0540-2026"
 }
