@@ -12,9 +12,170 @@
     </url>
     <url>
         <loc>https://regulatorfb.com/calendar/</loc>
-        <lastmod>2026-03-12</lastmod>
+        <lastmod>2026-03-16</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05004/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-osha-https-www-osha-gov-news-newsreleases-chicago-20260316/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05000/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05003/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05104/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05064/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-04999/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-04995/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05001/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05002/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-usda-ams-45857-at-https-www-ams-usda-gov/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-osha-4549b6622f/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05023/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05024/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-usda-ams-45859-at-https-www-ams-usda-gov/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05050/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05099/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05096/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-81757/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-fda-a292100f80/</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-04944/</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-04945/</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-04940/</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     
     <url>
@@ -1105,6 +1266,62 @@
     <url>
         <loc>https://regulatorfb.com/doc/fr-2026-01991/</loc>
         <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-ga-0b9127b50b/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-recalls-https-www-cpsc-gov-8405dc21-504c-4e72-80bd-3888da8cedca/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-recalls-https-www-cpsc-gov-9077de01-6af5-4ffc-9af6-3b35fed932c7/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-fl-6f6a5bc376/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-tx-07f1a39375/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-recalls-https-www-cpsc-gov-734c4e6c-6d98-4dff-b28c-6f4dbd6b424f/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-recalls-https-www-cpsc-gov-7f82bff1-5387-4613-b7b6-3a08f7d57c72/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-tx-92959b94aa/</loc>
+        
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
