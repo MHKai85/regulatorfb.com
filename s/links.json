@@ -21,5 +21,6 @@
   "b9fe9a": "http://www.fda.gov/news-events/press-announcements/fda-launches-new-adverse-event-look-tool",
   "c34c19": "https://texasagriculture.gov/News-Events/Article/10810/Commissioner-Miller-Applauds-FDA-Emergency-Authorization-of-New-Tool-to-Combat",
   "150b68": "https://api.fda.gov/food/enforcement.json?search=recall_number:H-0540-2026",
-  "8f64fd": "https://www.nj.gov/agriculture/news/press/2026/approved/press260302.shtml"
+  "8f64fd": "https://www.nj.gov/agriculture/news/press/2026/approved/press260302.shtml",
+  "257ea7": "https://api.fda.gov/food/enforcement.json?search=recall_number:H-0542-2026"
 }
