@@ -1404,7 +1404,7 @@
                     <button type="submit">Get Access</button>
                 </form>
                 <div class="cta-note" id="signup-note">Free while in beta. Instant access — check your inbox.</div>
-                <div class="cta-note" id="signup-thanks" style="display:none;">You're in. Check your inbox for a login link.</div>
+                <div class="cta-note" id="signup-thanks" style="display:none;">You are in. You will receive the next weekly digest.</div>
             </div>
         </div>
     </section>
@@ -1443,6 +1443,10 @@ document.querySelectorAll('.signup-form').forEach(function(form) {
             }
         } catch (err) {
             console.error('Subscribe error:', err);
+            var errorEl = document.createElement('p');
+            errorEl.textContent = 'Something went wrong. Please try again.';
+            errorEl.style.color = '#ef4444';
+            form.appendChild(errorEl);
         }
     });
 });

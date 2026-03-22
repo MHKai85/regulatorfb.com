@@ -360,8 +360,8 @@
         </form>
 
         <div class="thank-you" id="thank-you">
-            <h3>You're in.</h3>
-            <p>Watch your inbox — first issue arrives tomorrow morning.</p>
+            <h3>You are in.</h3>
+            <p>The weekly digest arrives every Monday.</p>
         </div>
     </div>
 </section>
@@ -443,6 +443,10 @@ document.querySelectorAll('.signup-form').forEach(function(form) {
             }
         } catch (err) {
             console.error('Subscribe error:', err);
+            var errorEl = document.createElement('p');
+            errorEl.textContent = 'Something went wrong. Please try again.';
+            errorEl.style.color = '#ef4444';
+            form.appendChild(errorEl);
         }
     });
 });
