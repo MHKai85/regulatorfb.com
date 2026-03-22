@@ -1399,11 +1399,12 @@
             <div class="final-cta">
                 <h2>Get early access &mdash; free while in beta</h2>
                 <p>Join compliance teams already tracking F&amp;B regulatory changes.</p>
-                <form class="signup-form" action="https://formspree.io/f/xreawyov" method="POST">
+                <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
                     <input type="email" name="email" placeholder="you@company.com" required>
-                    <button type="submit">Request Access</button>
+                    <button type="submit">Get Access</button>
                 </form>
-                <div class="cta-note">We'll review your request and send access within 24 hours</div>
+                <div class="cta-note" id="signup-note">Free while in beta. Instant access — check your inbox.</div>
+                <div class="cta-note" id="signup-thanks" style="display:none;">You're in. Check your inbox for a login link.</div>
             </div>
         </div>
     </section>
@@ -1422,5 +1423,29 @@
         </div>
     </footer>
 
+<script>
+document.querySelectorAll('.signup-form').forEach(function(form) {
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var email = form.querySelector('input[type="email"]').value;
+        try {
+            var resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email })
+            });
+            if (resp.ok) {
+                form.style.display = 'none';
+                var note = document.getElementById('signup-note');
+                var thanks = document.getElementById('signup-thanks');
+                if (note) note.style.display = 'none';
+                if (thanks) thanks.style.display = 'block';
+            }
+        } catch (err) {
+            console.error('Subscribe error:', err);
+        }
+    });
+});
+</script>
 </body>
 </html>

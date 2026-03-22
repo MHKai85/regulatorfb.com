@@ -353,9 +353,8 @@
         <h1>F&B Regulatory Intelligence, Delivered Daily</h1>
         <p>FDA recalls, USDA rule changes, labeling updates, and compliance deadlines — scanned, classified, and summarized before your morning coffee.</p>
 
-        <form class="signup-form" id="signup-form" action="https://formspree.io/f/xreawyov" method="POST">
+        <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
             <input type="email" name="email" placeholder="you@company.com" required>
-            <input type="hidden" name="_subject" value="New Regulator FB Signup">
             <button type="submit">Get the Newsletter</button>
             <p class="form-note">Free weekly digest. Unsubscribe anytime.</p>
         </form>
@@ -411,9 +410,8 @@
 <section class="cta">
     <h2>Stop Chasing Regulations</h2>
     <p>Let them come to you. Join QA directors and food safety professionals who start their day informed.</p>
-    <form class="signup-form" action="https://formspree.io/f/xreawyov" method="POST">
+    <form class="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
         <input type="email" name="email" placeholder="you@company.com" required>
-        <input type="hidden" name="_subject" value="New Regulator FB Signup">
         <button type="submit">Get the Newsletter</button>
         <p class="form-note">Free weekly digest. No spam. Unsubscribe anytime.</p>
     </form>
@@ -428,23 +426,25 @@
 </footer>
 
 <script>
-document.getElementById('signup-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const form = this;
-    const data = new FormData(form);
-    try {
-        const resp = await fetch(form.action, {
-            method: 'POST',
-            body: data,
-            headers: { 'Accept': 'application/json' }
-        });
-        if (resp.ok) {
-            form.style.display = 'none';
-            document.getElementById('thank-you').style.display = 'block';
+document.querySelectorAll('.signup-form').forEach(function(form) {
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        try {
+            const resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email })
+            });
+            if (resp.ok) {
+                form.style.display = 'none';
+                var ty = document.getElementById('thank-you');
+                if (ty) ty.style.display = 'block';
+            }
+        } catch (err) {
+            console.error('Subscribe error:', err);
         }
-    } catch (err) {
-        form.submit(); // fallback
-    }
+    });
 });
 </script>
 
