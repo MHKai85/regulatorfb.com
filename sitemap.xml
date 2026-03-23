@@ -12,9 +12,72 @@
     </url>
     <url>
         <loc>https://regulatorfb.com/calendar/</loc>
-        <lastmod>2026-03-20</lastmod>
+        <lastmod>2026-03-23</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05584/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05601/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05596/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05607/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-fl-92084f7328/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05591/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05550/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05653/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-05598/</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     
     <url>
@@ -1616,6 +1679,13 @@
     <url>
         <loc>https://regulatorfb.com/doc/congress-gov-119-hr-407/</loc>
         <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-tx-ba5fceb59b/</loc>
+        
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
