@@ -18,6 +18,20 @@
     </url>
     
     <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-06031/</loc>
+        <lastmod>2026-03-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-06030/</loc>
+        <lastmod>2026-03-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
         <loc>https://regulatorfb.com/doc/fr-2026-06059/</loc>
         <lastmod>2026-03-30</lastmod>
         <changefreq>monthly</changefreq>
@@ -62,6 +76,13 @@
     <url>
         <loc>https://regulatorfb.com/doc/rss-international-81808/</loc>
         <lastmod>2026-03-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-fda-1dc3ffa2d9/</loc>
+        <lastmod>2026-03-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
