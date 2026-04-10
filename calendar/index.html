@@ -116,7 +116,32 @@
         .subtitle {
             color: var(--text-secondary);
             font-size: 17px;
-            margin-bottom: 32px;
+            margin-bottom: 18px;
+        }
+        .intro-copy {
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+            max-width: 780px;
+        }
+        .summary-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+        .summary-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border: 1px solid var(--border-warm);
+            border-radius: var(--radius);
+            background: var(--surface-warm);
+            color: var(--navy);
+            font-size: 13px;
+            font-weight: 600;
         }
         .month-header {
             font-family: var(--font-serif);
@@ -489,7 +514,13 @@
     </nav>
     <main class="content">
         <h1>Regulatory Compliance Calendar</h1>
-        <p class="subtitle">Upcoming deadlines for food &amp; beverage regulatory actions -- next 90 days</p>
+        <p class="subtitle">Upcoming deadlines for food &amp; beverage regulatory actions over the next 90 days</p>
+        <p class="intro-copy">Track upcoming FDA, USDA, EPA, OSHA, FTC, and related regulatory deadlines that matter to food and beverage operators. This public calendar highlights comment periods, compliance dates, hearings, and effective dates, with links back to the underlying regulatory documents.</p>
+        <div class="summary-strip">
+            <div class="summary-chip">150 upcoming events</div>
+            <div class="summary-chip">Comment periods, effective dates, hearings, and compliance deadlines</div>
+            <div class="summary-chip">Linked to source documents for deeper review</div>
+        </div>
         
         
         <ul class="event-list">
