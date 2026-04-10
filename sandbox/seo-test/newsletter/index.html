@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulator · FB — Food & Beverage Regulatory Intelligence</title>
+    <meta name="description" content="Daily F&B regulatory intelligence. FDA recalls, USDA rules, labeling changes, compliance deadlines. Built for QA directors and food safety teams.">
+
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://regulatorfb.com">
+    <meta property="og:title" content="Regulator · FB — Food & Beverage Regulatory Intelligence">
+    <meta property="og:description" content="FDA recalls, USDA rules, labeling changes, compliance deadlines — scanned, classified, and delivered weekly.">
+    <meta property="og:image" content="https://regulatorfb.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@RegulatorFB">
+    <meta name="twitter:title" content="Regulator · FB — Food & Beverage Regulatory Intelligence">
+    <meta name="twitter:description" content="FDA recalls, USDA rules, labeling changes, compliance deadlines — scanned, classified, and delivered weekly.">
+    <meta name="twitter:image" content="https://regulatorfb.com/og-image.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a365d;
+            --navy-dark: #0f2440;
+            --navy-light: #2c4a7c;
+            --cream: #faf5eb;
+            --cream-dark: #f0e9db;
+            --white: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --accent: #c05621;
+            --accent-dark: #9a4a1d;
+            --accent-light: #fff7ed;
+            --border: #e2e8f0;
+            --font-serif: 'Source Serif 4', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-primary);
+            background: var(--cream);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Hero ── */
+        .hero {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, var(--navy-light) 100%);
+            color: var(--white);
+            padding: 80px 24px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent);
+        }
+
+        /* Subtle grid */
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .brand {
+            font-family: var(--font-serif);
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 24px;
+        }
+
+        .brand .interpunct {
+            color: var(--accent);
+            margin: 0 2px;
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(36px, 6vw, 56px);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.8);
+            max-width: 560px;
+            margin: 0 auto 48px;
+        }
+
+        /* ── Email Form ── */
+        .signup-form {
+            display: flex;
+            gap: 12px;
+            max-width: 480px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .signup-form input[type="email"] {
+            flex: 1;
+            min-width: 240px;
+            padding: 14px 20px;
+            font-size: 16px;
+            font-family: var(--font-sans);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 4px;
+            background: rgba(255,255,255,0.08);
+            color: var(--white);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .signup-form input[type="email"]::placeholder {
+            color: rgba(255,255,255,0.4);
+        }
+
+        .signup-form input[type="email"]:focus {
+            border-color: var(--accent);
+        }
+
+        .signup-form button {
+            padding: 14px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: var(--font-sans);
+            background: var(--accent);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+
+        .signup-form button:hover {
+            background: var(--accent-dark);
+        }
+
+        .form-note {
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+            margin-top: 16px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* ── What You Get ── */
+        .features {
+            padding: 80px 24px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            font-family: var(--font-serif);
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 56px;
+            color: var(--navy);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 24px;
+        }
+
+        .feature h3 {
+            font-family: var(--font-serif);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--navy);
+        }
+
+        .feature p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ── Sources ── */
+        .sources {
+            background: var(--white);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 60px 24px;
+            text-align: center;
+        }
+
+        .sources h2 {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 12px;
+        }
+
+        .sources p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .source-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 16px;
+            margin-top: 24px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .source-tag {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            background: var(--cream);
+            padding: 4px 12px;
+            border-radius: 3px;
+        }
+
+        /* ── CTA ── */
+        .cta {
+            background: var(--navy);
+            color: var(--white);
+            padding: 80px 24px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-family: var(--font-serif);
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .cta p {
+            font-size: 16px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 40px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            padding: 32px 24px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            background: var(--cream-dark);
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* ── Thank you state ── */
+        .thank-you {
+            display: none;
+            text-align: center;
+            padding: 16px;
+        }
+
+        .thank-you h3 {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .thank-you p {
+            font-size: 16px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .hero { padding: 60px 20px 80px; }
+            .signup-form { flex-direction: column; }
+            .signup-form input[type="email"] { min-width: 100%; }
+            .signup-form button { width: 100%; }
+            .features { padding: 60px 20px; }
+            .features-grid { gap: 32px; }
+        }
+    </style>
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="brand">Regulator<span class="interpunct"> · </span>FB</div>
+        <h1>F&B Regulatory Intelligence, Delivered Daily</h1>
+        <p>FDA recalls, USDA rule changes, labeling updates, and compliance deadlines — scanned, classified, and summarized before your morning coffee.</p>
+
+        <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
+            <input type="email" name="email" placeholder="you@company.com" required>
+            <button type="submit">Get the Newsletter</button>
+            <p class="form-note">Free weekly digest. Unsubscribe anytime.</p>
+        </form>
+
+        <div class="thank-you" id="thank-you">
+            <h3>You are in.</h3>
+            <p>The weekly digest arrives every Monday.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <h2>What You Get</h2>
+    <div class="features-grid">
+        <div class="feature">
+            <div class="feature-icon">&#9888;</div>
+            <h3>Recall Alerts</h3>
+            <p>FDA and CFIA recalls affecting food and beverage, filtered for what actually matters to your operation.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">&#9881;</div>
+            <h3>Rule Changes</h3>
+            <p>Federal Register filings, FSMA updates, and state-level regulation changes — caught the day they publish.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">&#128196;</div>
+            <h3>Compliance Deadlines</h3>
+            <p>Comment periods, effective dates, and enforcement timelines so nothing catches you off guard.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sources -->
+<section class="sources">
+    <h2>250+ Sources Scanned Daily</h2>
+    <p>Key regulators, public sources, and industry bodies — all monitored automatically so you don't have to.</p>
+    <div class="source-list">
+        <span class="source-tag">FDA</span>
+        <span class="source-tag">USDA</span>
+        <span class="source-tag">OSHA</span>
+        <span class="source-tag">FTC</span>
+        <span class="source-tag">CPSC</span>
+        <span class="source-tag">Federal Register</span>
+        <span class="source-tag">Congress.gov</span>
+        <span class="source-tag">CFIA</span>
+        <span class="source-tag">State Agencies</span>
+        <span class="source-tag">openFDA</span>
+    </div>
+</section>
+
+<!-- Bottom CTA -->
+<section class="cta">
+    <h2>Stop Chasing Regulations</h2>
+    <p>Let them come to you. Join QA directors and food safety professionals who start their day informed.</p>
+    <form class="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
+        <input type="email" name="email" placeholder="you@company.com" required>
+        <button type="submit">Get the Newsletter</button>
+        <p class="form-note">Free weekly digest. No spam. Unsubscribe anytime.</p>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>Regulator · FB &mdash; Food & Beverage Regulatory Intelligence</p>
+    <p style="margin-top: 8px;">
+        <a href="https://x.com/RegulatorFB">@RegulatorFB</a>
+    </p>
+</footer>
+
+<script>
+document.querySelectorAll('.signup-form').forEach(function(form) {
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        try {
+            const resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email })
+            });
+            if (resp.ok) {
+                form.style.display = 'none';
+                var ty = document.getElementById('thank-you');
+                if (ty) ty.style.display = 'block';
+            }
+        } catch (err) {
+            console.error('Subscribe error:', err);
+            var errorEl = document.createElement('p');
+            errorEl.textContent = 'Something went wrong. Please try again.';
+            errorEl.style.color = '#ef4444';
+            form.appendChild(errorEl);
+        }
+    });
+});
+</script>
+
+</body>
+</html>

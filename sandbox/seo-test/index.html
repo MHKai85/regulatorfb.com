@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGULATOR &middot; F&B &mdash; Federal Regulatory Intelligence for Food &amp; Beverage</title>
+    <meta name="description" content="Daily regulatory intelligence for food and beverage manufacturers. Track key rulemaking, guidance, recalls, and deadlines in one searchable platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://regulatorfb.com">
+    <meta property="og:title" content="REGULATOR · F&B — Federal Regulatory Intelligence">
+    <meta property="og:description" content="Daily regulatory intelligence for food and beverage manufacturers. Track key rulemaking, guidance, recalls, and deadlines in one searchable platform.">
+    <meta property="og:image" content="https://regulatorfb.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@RegulatorFB">
+    <meta name="twitter:title" content="REGULATOR · F&B — Federal Regulatory Intelligence">
+    <meta name="twitter:description" content="Daily regulatory intelligence for food and beverage manufacturers. Track key rulemaking, guidance, recalls, and deadlines in one searchable platform.">
+    <meta name="twitter:image" content="https://regulatorfb.com/og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a365d;
+            --navy-dark: #0f2440;
+            --navy-light: #2c4a7c;
+            --cream: #faf5eb;
+            --cream-dark: #f0e9db;
+            --white: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --accent-alert: #c05621;
+            --accent-alert-light: #fff7ed;
+            --accent-alert-dark: #9a4a1d;
+            --accent-success: #166534;
+            --accent-success-light: #f0fdf4;
+            --accent-info: #1e40af;
+            --accent-info-light: #eff6ff;
+            --accent-danger: #b91c1c;
+            --border: #e2e8f0;
+            --border-warm: #e5ded2;
+            --surface-warm: #fdfcfa;
+            --font-serif: 'Source Serif 4', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --radius: 4px;
+            --radius-lg: 6px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--white);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ═══════════════════════════════════════
+           NAV
+           ═══════════════════════════════════════ */
+        .nav {
+            background: var(--navy);
+            padding: 0 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -0.02em;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-dot {
+            color: var(--accent-alert);
+            margin: 0 4px;
+        }
+        .logo-fb {
+            font-family: var(--font-sans);
+            font-size: 26px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.85);
+            letter-spacing: 0.02em;
+            position: relative;
+            top: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: var(--radius);
+            transition: all 0.15s;
+        }
+
+        .nav-links a:hover {
+            color: var(--white);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background: var(--accent-alert) !important;
+            color: var(--white) !important;
+            font-weight: 600 !important;
+            padding: 10px 20px !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-alert-dark) !important;
+        }
+
+        /* ═══════════════════════════════════════
+           HERO
+           ═══════════════════════════════════════ */
+        .hero {
+            background: var(--navy);
+            padding: 80px 40px 0;
+            overflow: hidden;
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content {
+            padding-bottom: 80px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 28px;
+        }
+
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-success);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 52px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.12;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--accent-alert);
+        }
+
+        .hero-sub {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+            max-width: 480px;
+            margin-bottom: 36px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: var(--radius);
+            border: none;
+            cursor: pointer;
+            transition: all 0.15s;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: var(--accent-alert);
+            color: var(--white);
+        }
+
+        .btn-primary:hover { background: var(--accent-alert-dark); }
+
+        .btn-ghost {
+            background: transparent;
+            color: rgba(255,255,255,0.8);
+            border: 1px solid rgba(255,255,255,0.25);
+        }
+
+        .btn-ghost:hover {
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+        }
+
+        .hero-proof {
+            display: flex;
+            gap: 32px;
+            margin-top: 40px;
+            padding-top: 28px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .hero-proof-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-proof-value {
+            font-family: var(--font-serif);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .hero-proof-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Hero Screenshot */
+        .hero-screenshot {
+            position: relative;
+            align-self: end;
+        }
+
+        .screenshot-frame {
+            background: var(--navy-dark);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-bottom: none;
+            border-radius: 12px 12px 0 0;
+            padding: 12px 12px 0;
+            transform: perspective(1200px) rotateY(-3deg) rotateX(2deg);
+            box-shadow: 0 -8px 60px rgba(0,0,0,0.3);
+        }
+
+        .screenshot-toolbar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            padding: 0 4px;
+        }
+
+        .screenshot-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+        }
+
+        .screenshot-dot:first-child { background: #ff5f57; }
+        .screenshot-dot:nth-child(2) { background: #ffbd2e; }
+        .screenshot-dot:nth-child(3) { background: #28c840; }
+
+        .screenshot-url {
+            flex: 1;
+            background: rgba(255,255,255,0.08);
+            border-radius: 4px;
+            padding: 6px 12px;
+            font-size: 11px;
+            color: rgba(255,255,255,0.4);
+            margin-left: 8px;
+        }
+
+        /* Mini Dashboard */
+        .mini-dash {
+            background: var(--surface-warm);
+            border-radius: 8px 8px 0 0;
+            min-height: 380px;
+            overflow: hidden;
+        }
+
+        .mini-dash-header {
+            background: var(--navy);
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mini-dash-logo {
+            font-family: var(--font-serif);
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .mini-dash-logo span { color: var(--accent-alert); }
+
+        .mini-dash-tabs {
+            display: flex;
+            gap: 4px;
+        }
+
+        .mini-dash-tab {
+            font-size: 10px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.5);
+            padding: 4px 10px;
+            border-radius: 3px;
+        }
+
+        .mini-dash-tab.active {
+            color: var(--white);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .mini-dash-body {
+            padding: 16px;
+        }
+
+        .mini-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .mini-stat {
+            background: var(--white);
+            border: 1px solid var(--border-warm);
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .mini-stat-label {
+            font-size: 9px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .mini-stat-value {
+            font-family: var(--font-serif);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.2;
+        }
+
+        .mini-stat-value.green { color: var(--accent-success); }
+        .mini-stat-value.orange { color: var(--accent-alert); }
+
+        .mini-table {
+            background: var(--white);
+            border: 1px solid var(--border-warm);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .mini-table-header {
+            display: grid;
+            grid-template-columns: 1fr 50px 80px;
+            gap: 8px;
+            padding: 8px 12px;
+            background: var(--cream);
+            border-bottom: 1px solid var(--border-warm);
+        }
+
+        .mini-table-header span {
+            font-size: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+        }
+
+        .mini-table-row {
+            display: grid;
+            grid-template-columns: 1fr 50px 80px;
+            gap: 8px;
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--cream-dark);
+            align-items: center;
+        }
+
+        .mini-table-row:last-child { border-bottom: none; }
+
+        .mini-doc-title {
+            font-family: var(--font-serif);
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .mini-badge {
+            font-size: 8px;
+            font-weight: 700;
+            padding: 3px 6px;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .mini-badge.src {
+            background: #f5f3ff;
+            color: #6d28d9;
+        }
+
+        .mini-badge.type {
+            background: var(--cream);
+            color: var(--text-secondary);
+            font-size: 7px;
+        }
+
+        /* ═══════════════════════════════════════
+           PROBLEM SECTION
+           ═══════════════════════════════════════ */
+        .section-cream {
+            background: var(--cream);
+            padding: 100px 40px;
+        }
+
+        .section-white {
+            background: var(--white);
+            padding: 100px 40px;
+        }
+
+        .section-navy {
+            background: var(--navy);
+            padding: 100px 40px;
+        }
+
+        .section-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-inner-wide {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-heading {
+            font-family: var(--font-serif);
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+        }
+
+        .section-heading.white { color: var(--white); }
+
+        .section-sub {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            max-width: 640px;
+            margin-bottom: 48px;
+        }
+
+        .section-sub.light {
+            color: rgba(255,255,255,0.65);
+        }
+
+        /* Problem Stats */
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .problem-card {
+            background: var(--white);
+            border: 1px solid var(--border-warm);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+        }
+
+        .problem-number {
+            font-family: var(--font-serif);
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--accent-alert);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .problem-title {
+            font-family: var(--font-serif);
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .problem-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ═══════════════════════════════════════
+           FEATURES SECTION
+           ═══════════════════════════════════════ */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: var(--cream);
+            border: 1px solid var(--border-warm);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+        }
+
+        .feature-card-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--navy);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+
+        .feature-card-title {
+            font-family: var(--font-serif);
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .feature-card-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .feature-card-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--accent-alert);
+            background: var(--accent-alert-light);
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-top: 14px;
+        }
+
+        /* ═══════════════════════════════════════
+           BRIEFING SCREENSHOT SECTION
+           ═══════════════════════════════════════ */
+        .briefing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .briefing-content h3 {
+            font-family: var(--font-serif);
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+        }
+
+        .briefing-content p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 0;
+            font-size: 15px;
+            color: var(--text-primary);
+        }
+
+        .feature-check {
+            width: 22px;
+            height: 22px;
+            background: var(--accent-success-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 1px;
+            color: var(--accent-success);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* Email Preview */
+        .email-preview {
+            background: var(--white);
+            border: 1px solid var(--border-warm);
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(26,54,93,0.12);
+            overflow: hidden;
+        }
+
+        .email-chrome {
+            background: var(--cream);
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-warm);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .email-chrome-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .email-chrome-dot:nth-child(1) { background: #ff5f57; }
+        .email-chrome-dot:nth-child(2) { background: #ffbd2e; }
+        .email-chrome-dot:nth-child(3) { background: #28c840; }
+
+        .email-chrome-title {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-left: 8px;
+        }
+
+        .email-header-bar {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .email-from {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .email-subject {
+            font-family: var(--font-serif);
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .email-date {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .email-body {
+            padding: 20px;
+        }
+
+        .email-greeting {
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .email-doc-item {
+            display: flex;
+            gap: 12px;
+            padding: 12px;
+            background: var(--cream);
+            border-radius: var(--radius);
+            margin-bottom: 8px;
+            align-items: flex-start;
+        }
+
+        .email-doc-score {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .email-doc-score.high {
+            background: var(--accent-success-light);
+            color: var(--accent-success);
+        }
+
+        .email-doc-score.critical {
+            background: #fef2f2;
+            color: var(--accent-danger);
+        }
+
+        .email-doc-title {
+            font-family: var(--font-serif);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.3;
+            margin-bottom: 2px;
+        }
+
+        .email-doc-meta {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .email-footer-note {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ═══════════════════════════════════════
+           HOW IT WORKS
+           ═══════════════════════════════════════ */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            counter-reset: step;
+        }
+
+        .step-card {
+            position: relative;
+            counter-increment: step;
+        }
+
+        .step-number {
+            font-family: var(--font-serif);
+            font-size: 56px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.08);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .step-title {
+            font-family: var(--font-serif);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .step-desc {
+            font-size: 15px;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.65;
+        }
+
+        /* ═══════════════════════════════════════
+           SOURCE COVERAGE
+           ═══════════════════════════════════════ */
+        .source-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .source-card {
+            background: var(--cream);
+            border: 1px solid var(--border-warm);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            text-align: center;
+        }
+
+        .source-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--navy);
+            border-radius: 8px;
+            margin: 0 auto 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-family: var(--font-serif);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .source-name {
+            font-family: var(--font-serif);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .source-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* ═══════════════════════════════════════
+           TESTIMONIAL / QUOTE
+           ═══════════════════════════════════════ */
+        .quote-block {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: 28px;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--navy);
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+
+        .quote-attr {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .quote-attr strong {
+            color: var(--text-primary);
+        }
+
+        /* ═══════════════════════════════════════
+           PRICING TEASER
+           ═══════════════════════════════════════ */
+        .pricing-teaser {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .pricing-teaser p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ═══════════════════════════════════════
+           FINAL CTA / SIGNUP
+           ═══════════════════════════════════════ */
+        .final-cta {
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-family: var(--font-serif);
+            font-size: 44px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.65);
+            max-width: 560px;
+            margin: 0 auto 36px;
+            line-height: 1.7;
+        }
+
+        .signup-form {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            max-width: 480px;
+            margin: 0 auto 20px;
+        }
+
+        .signup-form input[type="email"] {
+            flex: 1;
+            padding: 14px 20px;
+            font-size: 15px;
+            font-family: var(--font-sans);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: var(--radius);
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+            outline: none;
+            transition: border-color 0.15s;
+        }
+
+        .signup-form input[type="email"]::placeholder {
+            color: rgba(255,255,255,0.4);
+        }
+
+        .signup-form input[type="email"]:focus {
+            border-color: var(--accent-alert);
+        }
+
+        .signup-form button {
+            padding: 14px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: var(--font-sans);
+            background: var(--accent-alert);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: background 0.15s;
+            white-space: nowrap;
+        }
+
+        .signup-form button:hover {
+            background: var(--accent-alert-dark);
+        }
+
+        .cta-note {
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+        }
+
+        /* ═══════════════════════════════════════
+           FOOTER
+           ═══════════════════════════════════════ */
+        .footer {
+            background: var(--navy-dark);
+            padding: 40px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            font-family: var(--font-serif);
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .footer-logo span { color: var(--accent-alert); }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover { color: rgba(255,255,255,0.7); }
+
+        /* ═══════════════════════════════════════
+           RESPONSIVE
+           ═══════════════════════════════════════ */
+        @media (max-width: 1024px) {
+            .hero-inner, .briefing-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 { font-size: 40px; }
+            .hero-screenshot { display: none; }
+            .problem-grid, .steps-grid, .features-grid { grid-template-columns: 1fr; }
+            .source-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .nav { padding: 0 20px; }
+            .nav-links a:not(.nav-cta) { display: none; }
+            .hero, .section-cream, .section-white, .section-navy { padding-left: 20px; padding-right: 20px; }
+            .hero h1 { font-size: 32px; }
+            .section-heading { font-size: 32px; }
+            .source-grid { grid-template-columns: 1fr; }
+            .signup-form { flex-direction: column; }
+            .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+            .footer-links { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/sandbox/seo-test/" class="logo">REGULATOR<span class="logo-dot">&middot;</span><span class="logo-fb">F&amp;B</span></a>
+            <div class="nav-links">
+                <a href="/sandbox/seo-test/calendar/">Calendar</a>
+                <a href="#recent-docs">Recent Docs</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#sources">Sources</a>
+                <a href="/sandbox/seo-test/newsletter/">Newsletter</a>
+                <a href="https://app.regulatorfb.com/login" class="nav-cta">Subscriber Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Monitoring key regulatory sources daily
+                </div>
+                <h1>F&amp;B regulatory intelligence, <em>delivered.</em></h1>
+                <p class="hero-sub">Searchable repository, compliance calendar, regulatory timeline, and weekly briefings &mdash; everything your compliance team needs to stay ahead of material regulatory changes.</p>
+                <div class="hero-ctas">
+                    <a href="#signup" class="btn btn-primary">Request Early Access (Sandbox Preview) &rarr;</a>
+                    <a href="https://app.regulatorfb.com/login" class="btn btn-ghost">Subscriber Login</a>
+                </div>
+                <div class="hero-proof">
+                    <div class="hero-proof-item">
+                        <span class="hero-proof-value">248+</span>
+                        <span class="hero-proof-label">Documents per scan</span>
+                    </div>
+                    <div class="hero-proof-item">
+                        <span class="hero-proof-value">10</span>
+                        <span class="hero-proof-label">Core sources monitored</span>
+                    </div>
+                    <div class="hero-proof-item">
+                        <span class="hero-proof-value">Daily</span>
+                        <span class="hero-proof-label">Updates</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT SCREENSHOT -->
+            <div class="hero-screenshot">
+                <div class="screenshot-frame">
+                    <div class="screenshot-toolbar">
+                        <span class="screenshot-dot"></span>
+                        <span class="screenshot-dot"></span>
+                        <span class="screenshot-dot"></span>
+                        <span class="screenshot-url">regulatorfb.com/repository</span>
+                    </div>
+                    <div class="mini-dash">
+                        <div class="mini-dash-header">
+                            <div class="mini-dash-logo">REGULATOR<span>&middot;</span>FB</div>
+                            <div class="mini-dash-tabs">
+                                <span class="mini-dash-tab active">Repository</span>
+                                <span class="mini-dash-tab">Calendar</span>
+                                <span class="mini-dash-tab">Timeline</span>
+                            </div>
+                        </div>
+                        <div class="mini-dash-body">
+                            <div class="mini-stats">
+                                <div class="mini-stat">
+                                    <div class="mini-stat-label">Documents</div>
+                                    <div class="mini-stat-value">248</div>
+                                </div>
+                                <div class="mini-stat">
+                                    <div class="mini-stat-label">Upcoming Events</div>
+                                    <div class="mini-stat-value green">72</div>
+                                </div>
+                                <div class="mini-stat">
+                                    <div class="mini-stat-label">Agencies</div>
+                                    <div class="mini-stat-value orange">10</div>
+                                </div>
+                            </div>
+                            <div class="mini-table">
+                                <div class="mini-table-header">
+                                    <span>Document</span>
+                                    <span>Agency</span>
+                                    <span>Type</span>
+                                </div>
+                                <div class="mini-table-row">
+                                    <div class="mini-doc-title">Maximum Line Speed Rates for Young Chicken...</div>
+                                    <span class="mini-badge src">FSIS</span>
+                                    <span class="mini-badge type">Final Rule</span>
+                                </div>
+                                <div class="mini-table-row">
+                                    <div class="mini-doc-title">Listing of Color Additives; Spirulina Extract</div>
+                                    <span class="mini-badge src">FDA</span>
+                                    <span class="mini-badge type">Final Rule</span>
+                                </div>
+                                <div class="mini-table-row">
+                                    <div class="mini-doc-title">Notice of Proposed Revision; Importation of Pineapples</div>
+                                    <span class="mini-badge src">APHIS</span>
+                                    <span class="mini-badge type">Notice</span>
+                                </div>
+                                <div class="mini-table-row">
+                                    <div class="mini-doc-title">Pesticide Tolerances; Registration Review</div>
+                                    <span class="mini-badge src">EPA</span>
+                                    <span class="mini-badge type">Proposed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section-cream">
+        <div class="section-inner-wide">
+            <div class="section-heading">The regulatory monitoring problem is a math problem</div>
+            <p class="section-sub">Regulators and public sources publish hundreds of documents every week. Your job is to find the handful that affect your operation &mdash; before they affect your operation.</p>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-number">500+</div>
+                    <div class="problem-title">Documents per week</div>
+                    <div class="problem-desc">Published across the Federal Register, FDA, FSIS, EPA, OSHA, FTC, and NIST. Most have nothing to do with food and beverage. But the ones that do can change everything.</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-number">~5%</div>
+                    <div class="problem-title">Are relevant to F&amp;B</div>
+                    <div class="problem-desc">That means 95% of what you scan is noise. But you can't skip the scanning, because the cost of missing the 5% &mdash; a warning letter, a recall, a failed audit &mdash; is catastrophic.</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-number">0</div>
+                    <div class="problem-title">Tools built for F&amp;B</div>
+                    <div class="problem-desc">Generic legal intelligence platforms weren't designed for food manufacturing. They don't understand FSMA, HACCP, FSIS jurisdiction, or the difference between a proposed rule and a final rule that demands action this quarter.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section-white" id="features">
+        <div class="section-inner-wide">
+            <div class="section-heading">Everything your compliance team needs</div>
+            <p class="section-sub">Purpose-built tools for tracking food and beverage regulatory activity across the sources that actually matter.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon">&#9776;</div>
+                    <div class="feature-card-title">Searchable Repository</div>
+                    <div class="feature-card-desc">Full-text search across regulatory documents. Filter by source, document type, and date range. Every document links to its original source.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">&#9635;</div>
+                    <div class="feature-card-title">Compliance Calendar</div>
+                    <div class="feature-card-desc">Upcoming deadlines, comment periods, and effective dates at a glance. Never miss a compliance window again.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">&#9866;</div>
+                    <div class="feature-card-title">Regulatory Timeline</div>
+                    <div class="feature-card-desc">Interactive Gantt chart showing regulatory events over a rolling six-month window. See how comment periods, effective dates, and hearings overlap.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">&#9993;</div>
+                    <div class="feature-card-title">Weekly Briefings</div>
+                    <div class="feature-card-desc">Curated newsletter with editorial commentary on the week's most important regulatory developments, delivered to your inbox.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">&#9733;</div>
+                    <div class="feature-card-title">Star &amp; Track</div>
+                    <div class="feature-card-desc">Bookmark the documents that matter to your operation. Build a personal watchlist and track changes over time.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">&#9889;</div>
+                    <div class="feature-card-title">Real-time Alerts</div>
+                    <div class="feature-card-desc">Get notified when regulations in your space change. Configure alerts by category and never be caught off guard.</div>
+                    <span class="feature-card-tag">Coming soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WEEKLY BRIEFING FEATURE -->
+    <section class="section-cream">
+        <div class="section-inner-wide">
+            <div class="briefing-grid">
+                <div class="briefing-content">
+                    <h3>Your weekly briefing. Curated. Only what matters.</h3>
+                    <p>Every week, REGULATOR delivers a curated briefing of the most important regulatory activity &mdash; filtered, contextualized, and ready to share with your team.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-check">&#10003;</span>
+                            Documents ranked by F&amp;B industry relevance
+                        </li>
+                        <li>
+                            <span class="feature-check">&#10003;</span>
+                            Editorial commentary &mdash; not raw legal text
+                        </li>
+                        <li>
+                            <span class="feature-check">&#10003;</span>
+                            Source links to original Federal Register entries
+                        </li>
+                        <li>
+                            <span class="feature-check">&#10003;</span>
+                            Comment period deadlines flagged automatically
+                        </li>
+                    </ul>
+                    <a href="#signup" class="btn btn-primary">Get Early Access &rarr;</a>
+                </div>
+                <div class="email-preview">
+                    <div class="email-chrome">
+                        <span class="email-chrome-dot"></span>
+                        <span class="email-chrome-dot"></span>
+                        <span class="email-chrome-dot"></span>
+                        <span class="email-chrome-title">Mail &mdash; REGULATOR Weekly Briefing</span>
+                    </div>
+                    <div class="email-header-bar">
+                        <div class="email-from">From: news@regulatorfb.com</div>
+                        <div class="email-subject">Your F&amp;B Regulatory Briefing &mdash; Week of Mar 2, 2026</div>
+                        <div class="email-date">Weekly edition &middot; 12 documents reviewed &middot; 4 high priority</div>
+                    </div>
+                    <div class="email-body">
+                        <div class="email-greeting">Good morning. Here are this week's top regulatory updates for F&amp;B:</div>
+                        <div class="email-doc-item">
+                            <div class="email-doc-score critical">!</div>
+                            <div>
+                                <div class="email-doc-title">FDA Launches Assessment of BHA Preservative</div>
+                                <div class="email-doc-meta">FDA &middot; Food Safety &middot; Comment period open</div>
+                            </div>
+                        </div>
+                        <div class="email-doc-item">
+                            <div class="email-doc-score high">New</div>
+                            <div>
+                                <div class="email-doc-title">Spirulina Extract Color Additive &mdash; Final Rule</div>
+                                <div class="email-doc-meta">FDA &middot; Labeling &amp; Packaging &middot; Effective Mar 10</div>
+                            </div>
+                        </div>
+                        <div class="email-doc-item">
+                            <div class="email-doc-score high">New</div>
+                            <div>
+                                <div class="email-doc-title">FSIS Inspection Rate Changes for 2026</div>
+                                <div class="email-doc-meta">USDA/FSIS &middot; Quality Control &middot; Effective immediately</div>
+                            </div>
+                        </div>
+                        <div class="email-doc-item">
+                            <div class="email-doc-score high">New</div>
+                            <div>
+                                <div class="email-doc-title">Oleoresin Paprika Import Duty &mdash; Preliminary</div>
+                                <div class="email-doc-meta">Commerce &middot; Trade &amp; Import &middot; Comment period 30 days</div>
+                            </div>
+                        </div>
+                        <div class="email-footer-note">8 additional documents available in your repository &rarr;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section-navy" id="how-it-works">
+        <div class="section-inner-wide">
+            <div class="section-heading white">Three steps to regulatory clarity</div>
+            <p class="section-sub light">REGULATOR was designed to fit your existing workflow, not replace it.</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-title">Request access</div>
+                    <div class="step-desc">Enter your email and we'll set up your account. You'll get access to the full repository, calendar, and timeline within 24 hours.</div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-title">Explore the platform</div>
+                    <div class="step-desc">Search the repository by keyword, source, or document type. Check the calendar for upcoming deadlines. Use the timeline to see the full regulatory landscape.</div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-title">Stay ahead</div>
+                    <div class="step-desc">Star the documents that matter, subscribe to weekly briefings, and never miss a comment period or effective date again.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- RECENT DOCUMENTS -->
+    <section class="section-cream" id="recent-docs">
+        <div class="section-inner-wide">
+            <div class="section-heading">Recent regulatory documents</div>
+            <p class="section-sub">A live sample of the public document pages Google should prioritize crawling first.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
+                <a href="/sandbox/seo-test/doc/fr-2026-06940/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Air Plan Approval; Ohio; Source-Specific Non-CTG RACT for Ohio</div>
+                    <div style="font-size:13px;color:#64748b;">Environmental Protection Agency &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-06966/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">United States Standards for Grades of Frozen Asparagus</div>
+                    <div style="font-size:13px;color:#64748b;">Agriculture Department, Agricultural Marketing Service &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-06971/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Revising U.S. Standards for Grades of Mushrooms</div>
+                    <div style="font-size:13px;color:#64748b;">Agriculture Department, Agricultural Marketing Service &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-06917/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Fisheries of the Exclusive Economic Zone off Alaska; Bering Sea and Aleutian Islands Management Area; Cost Recovery Fee Notice for the Pacific Cod Trawl Cooperative Program</div>
+                    <div style="font-size:13px;color:#64748b;">Commerce Department, National Oceanic and Atmospheric Administration &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-06953/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Polyethylhexyl Glycidyl Ether Polyethylene Oxide Copolymer in Pesticide Formulations; Exemption From the Requirement for a Tolerance</div>
+                    <div style="font-size:13px;color:#64748b;">Environmental Protection Agency &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-06954/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Hexanedioic acid, polymer with sodium 2-[(2-aminoethyl)amino]ethanesulfonate (1:1), 1,6-diisocyanatohexane, 2,2-dimethyl-1,3-propanediol, 1,2-ethanediamine and 1,6-hexanediol in Pesticide Formulations; Exemption from the Requirement for a Tolerance</div>
+                    <div style="font-size:13px;color:#64748b;">Environmental Protection Agency &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/rss-usda-ams-45890-at-https-www-ams-usda-gov/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">USDA Proposes Revisions to Frozen Asparagus Grade Standards</div>
+                    <div style="font-size:13px;color:#64748b;">USDA-AMS &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/rss-usda-ams-45889-at-https-www-ams-usda-gov/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">USDA Proposes Revisions to Mushroom Grade Standards</div>
+                    <div style="font-size:13px;color:#64748b;">USDA-AMS &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-07005/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Certain Frozen Warmwater Shrimp From India: Rescission of Antidumping Duty Administrative Review, In Part; 2024-2025</div>
+                    <div style="font-size:13px;color:#64748b;">Commerce Department, International Trade Administration &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-06935/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Agency Information Collection Activities; Proposed Collection; Comment Request; Submission of Petitions: Food Additive, Color Additive (Including Labeling), Submission of Information to a Master File in Support of Petitions; and Electronic Submission Using Food and Drug Administration Form 3503</div>
+                    <div style="font-size:13px;color:#64748b;">Health and Human Services Department, Food and Drug Administration &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-06928/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Monosodium Glutamate From the Republic of Indonesia and the People&#x27;s Republic of China: Final Results of the Expedited Second Sunset Reviews of the Antidumping Duty Orders</div>
+                    <div style="font-size:13px;color:#64748b;">Commerce Department, International Trade Administration &middot; 2026-04-10</div>
+                </a>
+                <a href="/sandbox/seo-test/doc/fr-2026-06936/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;text-decoration:none;color:#1e293b;">
+                    <div style="font-weight:600;color:#1a365d;margin-bottom:8px;">Agency Information Collection Activities; Proposed Collection; Comment Request; Color Additive Certification</div>
+                    <div style="font-size:13px;color:#64748b;">Health and Human Services Department, Food and Drug Administration &middot; 2026-04-10</div>
+                </a>
+            </div>
+            <div style="margin-top:20px;"><a href="/sandbox/seo-test/calendar/" class="btn btn-primary">Browse regulatory calendar &rarr;</a></div>
+        </div>
+    </section>
+
+    <!-- SOURCE COVERAGE -->
+    <section class="section-white" id="sources">
+        <div class="section-inner-wide">
+            <div class="section-heading">Every source your team checks &mdash; monitored continuously</div>
+            <p class="section-sub">REGULATOR pulls from the same high-value sources your team scans manually, so nothing falls through the cracks.</p>
+            <div class="source-grid">
+                <div class="source-card">
+                    <div class="source-icon">FR</div>
+                    <div class="source-name">Federal Register</div>
+                    <div class="source-desc">Proposed rules, final rules, notices</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">FDA</div>
+                    <div class="source-name">FDA</div>
+                    <div class="source-desc">Press releases, guidance, recalls</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">FSIS</div>
+                    <div class="source-name">USDA / FSIS</div>
+                    <div class="source-desc">Inspection, food safety, enforcement</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">EPA</div>
+                    <div class="source-name">EPA</div>
+                    <div class="source-desc">Environmental compliance, PFAS</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">FTC</div>
+                    <div class="source-name">FTC</div>
+                    <div class="source-desc">Consumer protection, labeling claims</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">OSHA</div>
+                    <div class="source-name">OSHA</div>
+                    <div class="source-desc">Worker safety, manufacturing standards</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">NIST</div>
+                    <div class="source-name">NIST</div>
+                    <div class="source-desc">Standards, frameworks, compliance</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon" style="font-size: 10px;">CODEX</div>
+                    <div class="source-name">Codex Alimentarius</div>
+                    <div class="source-desc">International food standards</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section-cream">
+        <div class="section-inner">
+            <div class="quote-block">
+                <div class="quote-text">"I used to spend the first hour of every day scanning the Federal Register and a stack of regulator websites. Now I spend five minutes reading my briefing and the rest of that hour on actual strategy."</div>
+                <div class="quote-attr"><strong>Director of Regulatory Affairs</strong> &middot; Mid-size F&amp;B Manufacturer</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING TEASER -->
+    <section class="section-white" id="pricing">
+        <div class="section-inner">
+            <div class="pricing-teaser">
+                <div class="section-heading" style="text-align: center;">Pricing</div>
+                <p>Currently free during beta. Paid plans start at $99/month when we launch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA / SIGNUP -->
+    <section class="section-navy" id="signup">
+        <div class="section-inner">
+            <div class="final-cta">
+                <h2>Get early access &mdash; free while in beta</h2>
+                <p>Join compliance teams already tracking F&amp;B regulatory changes.</p>
+                <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
+                    <input type="email" name="email" placeholder="you@company.com" required>
+                    <button type="submit">Get Access</button>
+                </form>
+                <div class="cta-note" id="signup-note">Free while in beta. Instant access — check your inbox.</div>
+                <div class="cta-note" id="signup-thanks" style="display:none;">You're in! Check your inbox for a login link to access the platform now.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">REGULATOR<span>&middot;</span>FB</div>
+            <div class="footer-links">
+                <a href="https://regulatorfb.com">regulatorfb.com</a>
+                <a href="https://x.com/RegulatorFB">@RegulatorFB</a>
+                <a href="/sandbox/seo-test/newsletter/">Newsletter</a>
+                <a href="https://app.regulatorfb.com/login">Subscriber Login</a>
+                <a href="/sandbox/seo-test/privacy/">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.querySelectorAll('.signup-form').forEach(function(form) {
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var email = form.querySelector('input[type="email"]').value;
+        try {
+            var resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email })
+            });
+            if (resp.ok) {
+                form.style.display = 'none';
+                var note = document.getElementById('signup-note');
+                var thanks = document.getElementById('signup-thanks');
+                if (note) note.style.display = 'none';
+                if (thanks) thanks.style.display = 'block';
+            }
+        } catch (err) {
+            console.error('Subscribe error:', err);
+            var errorEl = document.createElement('p');
+            errorEl.textContent = 'Something went wrong. Please try again.';
+            errorEl.style.color = '#ef4444';
+            form.appendChild(errorEl);
+        }
+    });
+});
+</script>
+</body>
+</html>
