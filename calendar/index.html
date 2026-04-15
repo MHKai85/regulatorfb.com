@@ -87,27 +87,29 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            flex-wrap: wrap;
-            justify-content: flex-end;
         }
+
         .nav-links a {
             color: rgba(255,255,255,0.7);
             text-decoration: none;
             font-size: 14px;
             font-weight: 500;
-            padding: 8px 14px;
+            padding: 8px 16px;
             border-radius: var(--radius);
             transition: all 0.15s;
-            white-space: nowrap;
         }
-        .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
-        .btn-login {
+
+        .nav-links a:hover {
+            color: var(--white);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
             background: var(--accent-alert) !important;
             color: var(--white) !important;
-            padding: 8px 20px !important;
             font-weight: 600 !important;
+            padding: 10px 20px !important;
         }
-        .btn-login:hover { background: var(--accent-alert-dark) !important; }
         .content {
             max-width: 900px;
             margin: 0 auto;
@@ -268,18 +270,13 @@
         }
         .footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
         .footer a:hover { color: var(--white); }
-        @media (max-width: 760px) {
+        @media (max-width: 980px) {
+            .nav-links a:not(.nav-cta) { display: none; }
+            .content { padding: 32px 20px 64px; }
+        }
+
+        @media (max-width: 640px) {
             .nav { padding: 0 16px; }
-            .nav-inner {
-                align-items: flex-start;
-                flex-direction: column;
-                height: auto;
-                padding: 14px 0;
-            }
-            .nav-links {
-                width: 100%;
-                justify-content: flex-start;
-            }
             .content { padding: 32px 16px 64px; }
             h1 { font-size: 28px; }
             .event-item { gap: 12px; }
@@ -531,7 +528,7 @@
                 <a href="https://regulatorfb.com/#how-it-works">How It Works</a>
                 <a href="https://regulatorfb.com/#signup">Get Access</a>
                 <a href="https://regulatorfb.com/newsletter/">Newsletter</a>
-                <a href="https://app.regulatorfb.com/login" class="btn-login">Subscriber Login</a>
+                <a href="https://app.regulatorfb.com/login" class="nav-cta">Subscriber Login</a>
             </div>
         </div>
     </nav>
