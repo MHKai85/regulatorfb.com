@@ -43,7 +43,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: var(--font-sans);
-            background: var(--cream);
+            background: var(--white);
             color: var(--text-primary);
             line-height: 1.6;
             font-size: 16px;
@@ -52,16 +52,14 @@
         .nav {
             background: var(--navy);
             padding: 0 40px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
         }
         .nav-inner {
             display: flex;
             align-items: center;
             justify-content: space-between;
             height: 64px;
-            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
         }
         .logo {
             font-family: var(--font-serif);
@@ -83,12 +81,7 @@
             position: relative;
             top: 0.5px;
         }
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
+        .nav-links { display: flex; align-items: center; gap: 8px; }
         .nav-links a {
             color: rgba(255,255,255,0.7);
             text-decoration: none;
@@ -98,18 +91,14 @@
             border-radius: var(--radius);
             transition: all 0.15s;
         }
-
-        .nav-links a:hover {
-            color: var(--white);
-            background: rgba(255,255,255,0.1);
-        }
-
-        .nav-cta {
+        .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+        .btn-login {
             background: var(--accent-alert) !important;
             color: var(--white) !important;
+            padding: 8px 20px !important;
             font-weight: 600 !important;
-            padding: 10px 20px !important;
         }
+        .btn-login:hover { background: var(--accent-alert-dark) !important; }
         .content {
             max-width: 900px;
             margin: 0 auto;
@@ -270,11 +259,6 @@
         }
         .footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
         .footer a:hover { color: var(--white); }
-        @media (max-width: 980px) {
-            .nav-links a:not(.nav-cta) { display: none; }
-            .content { padding: 32px 20px 64px; }
-        }
-
         @media (max-width: 640px) {
             .nav { padding: 0 16px; }
             .content { padding: 32px 16px 64px; }
@@ -290,7 +274,7 @@
         "@type": "ItemList",
         "name": "Regulatory Compliance Calendar",
         "description": "Upcoming FDA, USDA, EPA, OSHA, and FTC regulatory deadlines for food and beverage teams",
-        "numberOfItems": 150,
+        "numberOfItems": 140,
         "itemListElement": [
             
             {
@@ -298,9 +282,9 @@
                 "position": 1,
                 "item": {
                     "@type": "Event",
-                    "name": "NHTSA Automated Vehicle Safety Public Meeting: March 2026 - Comment Period",
-                    "startDate": "2026-04-10",
-                    "description": "The public docket will remain open for comments for 30 days following the public meeting, until April 10, 2026."
+                    "name": "Fisheries of the Northeastern United States; 2026 Chub Mackerel, Squid, and Butterfish Fishery Specifications - Comment Period",
+                    "startDate": "2026-04-15",
+                    "description": "Public comments must be received by April 15, 2026."
                 }
             },
             
@@ -309,9 +293,9 @@
                 "position": 2,
                 "item": {
                     "@type": "Event",
-                    "name": "Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Title: Rural Health Network Development Planning Program Performance Improvement and Measurement System, OMB No. 0915-0384-Revision - Comment Period",
-                    "startDate": "2026-04-10",
-                    "description": "Comments on this ICR should be received no later than April 10, 2026."
+                    "name": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 102 To Accommodate ADS-Equipped Vehicles - Comment Period",
+                    "startDate": "2026-04-15",
+                    "description": "Comments should be submitted no later than April 15, 2026."
                 }
             },
             
@@ -320,9 +304,9 @@
                 "position": 3,
                 "item": {
                     "@type": "Event",
-                    "name": "Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention - Comment Period",
-                    "startDate": "2026-04-10",
-                    "description": "Comments must be received on or before April 10, 2026."
+                    "name": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 103 and FMVSS No. 104 To Accommodate ADS-Equipped Vehicles; Incorporation by Reference - Comment Period",
+                    "startDate": "2026-04-15",
+                    "description": "Comments should be submitted no later than April 15, 2026."
                 }
             },
             
@@ -331,9 +315,9 @@
                 "position": 4,
                 "item": {
                     "@type": "Event",
-                    "name": "Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention; Extension of Comment Period - Comment Period",
-                    "startDate": "2026-04-10",
-                    "description": "The comment period for the proposed rule published on February 24, 2026 (91 FR 8970) was originally scheduled to close on April 10, 2026, but the comment period is being extended by 31 days, becaus..."
+                    "name": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; War Hazards Compensation Act Claims, Benefits, and Notices - Comment Period",
+                    "startDate": "2026-04-15",
+                    "description": "The OMB will consider all written comments that the agency receives on or before April 15, 2026."
                 }
             },
             
@@ -342,9 +326,9 @@
                 "position": 5,
                 "item": {
                     "@type": "Event",
-                    "name": "Monosodium Glutamate From the Republic of Indonesia and the People&#39;s Republic of China: Final Results of the Expedited Second Sunset Reviews of the Antidumping Duty Orders - Effective Date",
-                    "startDate": "2026-04-10",
-                    "description": "Applicable April 10, 2026."
+                    "name": "Agency Information Collection Activities: Submission to OMB for Review and Approval; Public Comment Request; Health Workforce Connector, OMB No. 0906-0031 Revision - Comment Period",
+                    "startDate": "2026-04-15",
+                    "description": "Comments on this ICR should be received no later than April 15, 2026."
                 }
             },
             
@@ -353,9 +337,9 @@
                 "position": 6,
                 "item": {
                     "@type": "Event",
-                    "name": "Certain Frozen Warmwater Shrimp From India: Rescission of Antidumping Duty Administrative Review, In Part; 2024-2025 - Effective Date",
-                    "startDate": "2026-04-10",
-                    "description": "Applicable April 10, 2026."
+                    "name": "North Pacific Swordfish United States Stakeholder Meeting; Meeting Announcement - Meeting",
+                    "startDate": "2026-04-15",
+                    "description": "You must complete the registration process by April 15, 2026, if you plan to attend the meeting (see ADDRESSES)."
                 }
             },
             
@@ -364,9 +348,9 @@
                 "position": 7,
                 "item": {
                     "@type": "Event",
-                    "name": "Hexanedioic acid, polymer with sodium 2-[(2-aminoethyl)amino]ethanesulfonate (1:1), 1,6-diisocyanatohexane, 2,2-dimethyl-1,3-propanediol, 1,2-ethanediamine and 1,6-hexanediol in Pesticide Formulations; Exemption from the Requirement for a Tolerance - Effective Date",
-                    "startDate": "2026-04-10",
-                    "description": "This regulation is effective April 10, 2026."
+                    "name": "Certain Frozen Fish Fillets From the Socialist Republic of Vietnam: Final Results of the Expedited Fourth Sunset Review of the Antidumping Duty Order - Effective Date",
+                    "startDate": "2026-04-15",
+                    "description": "Applicable April 15, 2026."
                 }
             },
             
@@ -375,9 +359,9 @@
                 "position": 8,
                 "item": {
                     "@type": "Event",
-                    "name": "Polyethylhexyl Glycidyl Ether Polyethylene Oxide Copolymer in Pesticide Formulations; Exemption From the Requirement for a Tolerance - Effective Date",
-                    "startDate": "2026-04-10",
-                    "description": "This regulation is effective April 10, 2026."
+                    "name": "Citric Acid and Certain Citrate Salts From the People&#39;s Republic of China: Final Results of the Expedited Third Sunset Review of the Countervailing Duty Order - Effective Date",
+                    "startDate": "2026-04-15",
+                    "description": "Applicable April 15, 2026."
                 }
             },
             
@@ -386,9 +370,9 @@
                 "position": 9,
                 "item": {
                     "@type": "Event",
-                    "name": "Fisheries of the Exclusive Economic Zone off Alaska; Bering Sea and Aleutian Islands Management Area; Cost Recovery Fee Notice for the Pacific Cod Trawl Cooperative Program - Other",
-                    "startDate": "2026-04-10",
-                    "description": "The fee percentage is valid on April 10, 2026."
+                    "name": "Citric Acid and Certain Citrate Salts From the People&#39;s Republic of China: Final Results of the Expedited Third Sunset Review of the Antidumping Duty Order - Effective Date",
+                    "startDate": "2026-04-15",
+                    "description": "Applicable April 15, 2026."
                 }
             },
             
@@ -397,9 +381,9 @@
                 "position": 10,
                 "item": {
                     "@type": "Event",
-                    "name": "Notice of Request To Renew an Approved Information Collection: Sanitation SOPs and Pathogen Reduction/HACCP - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Submit comments on or before April 13, 2026."
+                    "name": "Allocations of Cross-State Air Pollution Rule Allowances From New Unit Set-Asides for 2025 Control Periods - Other",
+                    "startDate": "2026-04-15",
+                    "description": "April 15, 2026."
                 }
             },
             
@@ -408,9 +392,9 @@
                 "position": 11,
                 "item": {
                     "@type": "Event",
-                    "name": "Information Collection Request; Advancing Markets for Producers (Formerly Partnerships for Climate-Smart Commodities) - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "We will consider comments that we receive by April 13, 2026."
+                    "name": "Commission Information Collection Activities (FERC-725N) Comment Request; Revision - Comment Period",
+                    "startDate": "2026-04-16",
+                    "description": "Comments on the collection of information are due April 16, 2026."
                 }
             },
             
@@ -419,9 +403,9 @@
                 "position": 12,
                 "item": {
                     "@type": "Event",
-                    "name": "Electronic Export Manifest for Vessel Cargo - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Comments must be received by April 13, 2026."
+                    "name": "National Emission Standards for Hazardous Air Pollutants: Ethylene Oxide Emissions Standards for Sterilization Facilities Residual Risk and Technology Review Reconsideration - Comment Period",
+                    "startDate": "2026-04-16",
+                    "description": "Under the Paperwork Reduction Act (PRA), comments on the information collection provisions are best assured of consideration if the Office of Management and Budget (OMB) receives a copy of your com..."
                 }
             },
             
@@ -430,9 +414,9 @@
                 "position": 13,
                 "item": {
                     "@type": "Event",
-                    "name": "Agency Information Collection Activities; Comment Request; Job Corps Enrollee Allotment Determination - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Consideration will be given to all written comments received by April 13, 2026."
+                    "name": "Poultry Grower Payment Systems and Capital Improvement Systems; Delay of Effective Date - Comment Period",
+                    "startDate": "2026-04-17",
+                    "description": "Comments on this proposed rule must be received on or before April 17, 2026."
                 }
             },
             
@@ -441,9 +425,9 @@
                 "position": 14,
                 "item": {
                     "@type": "Event",
-                    "name": "Access to Employee Exposure and Medical Records; Extension of the Office of Management and Budget&#39;s (OMB) Approval of Information Collection (Paperwork) Requirements - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Comments must be submitted (postmarked, sent, or received) by April 13, 2026."
+                    "name": "Reef Fish Fishery of the Gulf of America; Shallow-Water Grouper Management Measures - Comment Period",
+                    "startDate": "2026-04-17",
+                    "description": "Written comments must be received on or before April 17, 2026."
                 }
             },
             
@@ -452,9 +436,9 @@
                 "position": 15,
                 "item": {
                     "@type": "Event",
-                    "name": "Aerial Lifts Standard; Extension of the Office of Management and Budget&#39;s (OMB) Approval of Information Collection (Paperwork) Requirements - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Comments must be submitted (postmarked, sent, or received) by April 13, 2026."
+                    "name": "Magnuson-Stevens Act Provisions; General Provisions for Domestic Fisheries; Application for Exempted Fishing Permits - Comment Period",
+                    "startDate": "2026-04-17",
+                    "description": "Comments must be received on or before April 17, 2026."
                 }
             },
             
@@ -463,9 +447,9 @@
                 "position": 16,
                 "item": {
                     "@type": "Event",
-                    "name": "Proposed Revision of Information Collection; Contingent Work Supplement to the Current Population Survey - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Written comments must be submitted to the office listed in the Addresses section of this notice on or before April 13, 2026."
+                    "name": "Magnuson-Stevens Act Provisions; General Provisions for Domestic Fisheries; Application for Exempted Fishing Permits - Comment Period",
+                    "startDate": "2026-04-17",
+                    "description": "Comments must be received on or before April 17, 2026."
                 }
             },
             
@@ -474,9 +458,9 @@
                 "position": 17,
                 "item": {
                     "@type": "Event",
-                    "name": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Official Actions Under the Defense Priorities and Allocations System - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "To ensure consideration, comments regarding this proposed information collection must be received on or before April 13, 2026."
+                    "name": "Bayer U.S.-Crop Science: Availability of a Petition for a Determination of Nonregulated Status and Draft Plant Pest Risk Assessment for MON 94637 Lepidopteran-Protected Soybean (Glycine Max) - Comment Period",
+                    "startDate": "2026-04-20",
+                    "description": "We will consider all comments that we receive on or before April 20, 2026."
                 }
             },
             
@@ -485,9 +469,9 @@
                 "position": 18,
                 "item": {
                     "@type": "Event",
-                    "name": "Information Collections Being Reviewed by the Federal Communications Commission - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Written PRA comments should be submitted on or before April 13, 2026."
+                    "name": "Syngenta Seeds, LLC.: Availability of a Petition for a Determination of Nonregulated Status and Draft Plant Pest Risk Assessment for Insect Resistant MZIR260 Maize (Zea Mays L.) - Comment Period",
+                    "startDate": "2026-04-20",
+                    "description": "We will consider all comments that we receive on or before April 20, 2026."
                 }
             },
             
@@ -496,9 +480,9 @@
                 "position": 19,
                 "item": {
                     "@type": "Event",
-                    "name": "Agency Information Collection Activities; Proposed Collection; Comment Request; Animal Food and Egg Regulatory Program Standards - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Submit written comments (including recommendations) on the collection of information by April 13, 2026."
+                    "name": "Pioneer Hi-Bred International, Inc.: Availability of a Petition for a Determination of Nonregulated Status and Draft Plant Pest Risk Assessment for Insect Resistant and Herbicide-Tolerant DAS-01131-3 Maize (Corn) - Comment Period",
+                    "startDate": "2026-04-20",
+                    "description": "We will consider all comments that we receive on or before April 20, 2026."
                 }
             },
             
@@ -507,9 +491,9 @@
                 "position": 20,
                 "item": {
                     "@type": "Event",
-                    "name": "Protection of Stratospheric Ozone: Listing of Substitutes Under the Significant New Alternatives Policy Program in Refrigeration and Air Conditioning and Fire Suppression; Supplemental Notice of Proposed Rulemaking - Comment Period",
-                    "startDate": "2026-04-13",
-                    "description": "Eastern Daylight Time on or before April 13, 2026."
+                    "name": "Pioneer Hi-Bred International, Inc.: Availability of a Petition for a Determination of Nonregulated Status and Draft Plant Pest Risk Assessment for Insect Resistant and Herbicide-Tolerant DP-910521-2 Maize (Corn) - Comment Period",
+                    "startDate": "2026-04-20",
+                    "description": "We will consider all comments that we receive on or before April 20, 2026."
                 }
             }
             
@@ -523,12 +507,8 @@
             <a href="https://regulatorfb.com/" class="logo">REGULATOR<span class="logo-dot">&middot;</span><span class="logo-fb">F&amp;B</span></a>
             <div class="nav-links">
                 <a href="https://regulatorfb.com/calendar/">Calendar</a>
-                <a href="https://regulatorfb.com/#recent-docs">Recent Docs</a>
-                <a href="https://regulatorfb.com/#features">Platform</a>
-                <a href="https://regulatorfb.com/#how-it-works">How It Works</a>
-                <a href="https://regulatorfb.com/#signup">Get Access</a>
                 <a href="https://regulatorfb.com/newsletter/">Newsletter</a>
-                <a href="https://app.regulatorfb.com/login" class="nav-cta">Subscriber Login</a>
+                <a href="https://app.regulatorfb.com/login" class="btn-login">Log In</a>
             </div>
         </div>
     </nav>
@@ -537,7 +517,7 @@
         <p class="subtitle">Upcoming deadlines for food &amp; beverage regulatory actions over the next 90 days</p>
         <p class="intro-copy">Track upcoming FDA, USDA, EPA, OSHA, FTC, and related regulatory deadlines that matter to food and beverage operators. This public calendar highlights comment periods, compliance dates, hearings, and effective dates, with links back to the underlying regulatory documents.</p>
         <div class="summary-strip">
-            <div class="summary-chip">150 upcoming events</div>
+            <div class="summary-chip">140 upcoming events</div>
             <div class="summary-chip">Comment periods, effective dates, hearings, and compliance deadlines</div>
             <div class="summary-chip">Linked to source documents for deeper review</div>
         </div>
@@ -551,336 +531,6 @@
                 </ul>
                 <h2 class="month-header">April 2026</h2>
                 <ul class="event-list">
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02503/">NHTSA Automated Vehicle Safety Public Meeting: March 2026</a></div>
-                    <div class="event-agencies">Transportation Department, National Highway Traffic Safety Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02473/">Agency Information Collection Activities: Proposed Collection: Public Comment Request; Information Collection Request Title: Rural Health Network Development Planning Program Performance Improvement and Measurement System, OMB No. 0915-0384-Revision</a></div>
-                    <div class="event-agencies">Health and Human Services Department, Health Resources and Services Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-03633/">Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention</a></div>
-                    <div class="event-agencies">Environmental Protection Agency</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06444/">Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention; Extension of Comment Period</a></div>
-                    <div class="event-agencies">Environmental Protection Agency</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-effective_date">Effective Date</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06928/">Monosodium Glutamate From the Republic of Indonesia and the People&#39;s Republic of China: Final Results of the Expedited Second Sunset Reviews of the Antidumping Duty Orders</a></div>
-                    <div class="event-agencies">Commerce Department, International Trade Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-effective_date">Effective Date</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07005/">Certain Frozen Warmwater Shrimp From India: Rescission of Antidumping Duty Administrative Review, In Part; 2024-2025</a></div>
-                    <div class="event-agencies">Commerce Department, International Trade Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-effective_date">Effective Date</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06954/">Hexanedioic acid, polymer with sodium 2-[(2-aminoethyl)amino]ethanesulfonate (1:1), 1,6-diisocyanatohexane, 2,2-dimethyl-1,3-propanediol, 1,2-ethanediamine and 1,6-hexanediol in Pesticide Formulations; Exemption from the Requirement for a Tolerance</a></div>
-                    <div class="event-agencies">Environmental Protection Agency</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-effective_date">Effective Date</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06953/">Polyethylhexyl Glycidyl Ether Polyethylene Oxide Copolymer in Pesticide Formulations; Exemption From the Requirement for a Tolerance</a></div>
-                    <div class="event-agencies">Environmental Protection Agency</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">10</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Other</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06917/">Fisheries of the Exclusive Economic Zone off Alaska; Bering Sea and Aleutian Islands Management Area; Cost Recovery Fee Notice for the Pacific Cod Trawl Cooperative Program</a></div>
-                    <div class="event-agencies">Commerce Department, National Oceanic and Atmospheric Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02647/">Notice of Request To Renew an Approved Information Collection: Sanitation SOPs and Pathogen Reduction/HACCP</a></div>
-                    <div class="event-agencies">Agriculture Department, Food Safety and Inspection Service</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02625/">Information Collection Request; Advancing Markets for Producers (Formerly Partnerships for Climate-Smart Commodities)</a></div>
-                    <div class="event-agencies">Agriculture Department, Commodity Credit Corporation, Natural Resources Conservation Service</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02662/">Electronic Export Manifest for Vessel Cargo</a></div>
-                    <div class="event-agencies">Homeland Security Department, U.S. Customs and Border Protection</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02644/">Agency Information Collection Activities; Comment Request; Job Corps Enrollee Allotment Determination</a></div>
-                    <div class="event-agencies">Labor Department, Employment and Training Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02628/">Access to Employee Exposure and Medical Records; Extension of the Office of Management and Budget&#39;s (OMB) Approval of Information Collection (Paperwork) Requirements</a></div>
-                    <div class="event-agencies">Labor Department, Occupational Safety and Health Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02546/">Aerial Lifts Standard; Extension of the Office of Management and Budget&#39;s (OMB) Approval of Information Collection (Paperwork) Requirements</a></div>
-                    <div class="event-agencies">Labor Department, Occupational Safety and Health Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02629/">Proposed Revision of Information Collection; Contingent Work Supplement to the Current Population Survey</a></div>
-                    <div class="event-agencies">Labor Department, Labor Statistics Bureau</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02578/">Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Official Actions Under the Defense Priorities and Allocations System</a></div>
-                    <div class="event-agencies">Commerce Department, Industry and Security Bureau</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-02545/">Information Collections Being Reviewed by the Federal Communications Commission</a></div>
-                    <div class="event-agencies">Federal Communications Commission</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-04940/">Agency Information Collection Activities; Proposed Collection; Comment Request; Animal Food and Egg Regulatory Program Standards</a></div>
-                    <div class="event-agencies">Health and Human Services Department, Food and Drug Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">13</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06665/">Protection of Stratospheric Ozone: Listing of Substitutes Under the Significant New Alternatives Policy Program in Refrigeration and Air Conditioning and Fire Suppression; Supplemental Notice of Proposed Rulemaking</a></div>
-                    <div class="event-agencies">Environmental Protection Agency</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">14</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Other</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-05681/">Notice of the Opening of the Inclusions Window for the Section 232 Automobile Parts Tariff Inclusions Process</a></div>
-                    <div class="event-agencies">Commerce Department, International Trade Administration</div>
-                </div>
-            </li>
-        
-            
-            
-            <li class="event-item">
-                <div class="event-date-col">
-                    <div class="event-day">14</div>
-                    <div class="event-month">Apr</div>
-                </div>
-                <div class="event-info">
-                    
-                    <span class="event-type-badge type-default">Comment Period</span>
-                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06102/">Fisheries of the Northeastern United States; Mid-Atlantic Blueline Tilefish and Golden Tilefish Fisheries; 2026 Specifications</a></div>
-                    <div class="event-agencies">Commerce Department, National Oceanic and Atmospheric Administration</div>
-                </div>
-            </li>
-        
-            
             
             <li class="event-item">
                 <div class="event-date-col">
@@ -967,6 +617,66 @@
                     <span class="event-type-badge type-default">Meeting</span>
                     <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06533/">North Pacific Swordfish United States Stakeholder Meeting; Meeting Announcement</a></div>
                     <div class="event-agencies">Commerce Department, National Oceanic and Atmospheric Administration</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">15</div>
+                    <div class="event-month">Apr</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-effective_date">Effective Date</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07309/">Certain Frozen Fish Fillets From the Socialist Republic of Vietnam: Final Results of the Expedited Fourth Sunset Review of the Antidumping Duty Order</a></div>
+                    <div class="event-agencies">Commerce Department, International Trade Administration</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">15</div>
+                    <div class="event-month">Apr</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-effective_date">Effective Date</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07311/">Citric Acid and Certain Citrate Salts From the People&#39;s Republic of China: Final Results of the Expedited Third Sunset Review of the Countervailing Duty Order</a></div>
+                    <div class="event-agencies">Commerce Department, International Trade Administration</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">15</div>
+                    <div class="event-month">Apr</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-effective_date">Effective Date</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07308/">Citric Acid and Certain Citrate Salts From the People&#39;s Republic of China: Final Results of the Expedited Third Sunset Review of the Antidumping Duty Order</a></div>
+                    <div class="event-agencies">Commerce Department, International Trade Administration</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">15</div>
+                    <div class="event-month">Apr</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-default">Other</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07299/">Allocations of Cross-State Air Pollution Rule Allowances From New Unit Set-Asides for 2025 Control Periods</a></div>
+                    <div class="event-agencies">Environmental Protection Agency</div>
                 </div>
             </li>
         
@@ -1694,6 +1404,21 @@
             
             <li class="event-item">
                 <div class="event-date-col">
+                    <div class="event-day">27</div>
+                    <div class="event-month">Apr</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-default">Meeting</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07110/">New England Fishery Management Council; Public Meeting</a></div>
+                    <div class="event-agencies">Commerce Department, National Oceanic and Atmospheric Administration</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
                     <div class="event-day">28</div>
                     <div class="event-month">Apr</div>
                 </div>
@@ -1782,6 +1507,36 @@
         
             
             
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">29</div>
+                    <div class="event-month">Apr</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-default">Other</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06876/">Fisheries of the Caribbean; Southeast Data, Assessment, and Review; Public Meeting</a></div>
+                    <div class="event-agencies">Commerce Department, National Oceanic and Atmospheric Administration</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">29</div>
+                    <div class="event-month">Apr</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-default">Comment Period</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07142/">TÜV SÜD America, Inc.: Application for Expansion of Recognition</a></div>
+                    <div class="event-agencies">Labor Department, Occupational Safety and Health Administration</div>
+                </div>
+            </li>
+        
+            
+            
                 
                 </ul>
                 <h2 class="month-header">May 2026</h2>
@@ -1827,6 +1582,21 @@
                     <span class="event-type-badge type-default">Comment Period</span>
                     <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06294/">Consideration of Acceptable Market Name Change for Certain Rockfish (Sebastes spp.); Request for Information</a></div>
                     <div class="event-agencies">Health and Human Services Department, Food and Drug Administration</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">1</div>
+                    <div class="event-month">May</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-default">Other</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06875/">Fisheries of the Gulf of America; Southeast Data, Assessment, and Review; Public Meeting</a></div>
+                    <div class="event-agencies">Commerce Department, National Oceanic and Atmospheric Administration</div>
                 </div>
             </li>
         
@@ -2059,6 +1829,21 @@
             
             <li class="event-item">
                 <div class="event-date-col">
+                    <div class="event-day">11</div>
+                    <div class="event-month">May</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-default">Meeting</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07110/">New England Fishery Management Council; Public Meeting</a></div>
+                    <div class="event-agencies">Commerce Department, National Oceanic and Atmospheric Administration</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
                     <div class="event-day">12</div>
                     <div class="event-month">May</div>
                 </div>
@@ -2067,6 +1852,21 @@
                     <span class="event-type-badge type-default">Comment Period</span>
                     <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-04922/">Notice of Availability of a Pest Risk Analysis for the Importation of Fresh Sweet Potato (Ipomoea batatas (L.)) Roots From the Republic of Korea Into the United States</a></div>
                     <div class="event-agencies">Agriculture Department, Animal and Plant Health Inspection Service</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">13</div>
+                    <div class="event-month">May</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-effective_date">Effective Date</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07060/">Revising U.S. Standards for Grades of Lemons</a></div>
+                    <div class="event-agencies">Agriculture Department, Agricultural Marketing Service</div>
                 </div>
             </li>
         
@@ -2791,6 +2591,36 @@
                     
                     <span class="event-type-badge type-effective_date">Effective Date</span>
                     <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-06275/">Renewable Fuel Standard (RFS) Program: Standards for 2026 and 2027, Partial Waiver of 2025 Cellulosic Biofuel Volume Requirement, and Other Changes</a></div>
+                    <div class="event-agencies">Environmental Protection Agency</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">15</div>
+                    <div class="event-month">Jun</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-default">Comment Period</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07328/">Request for Information Regarding Consumer Product Recall Fraud</a></div>
+                    <div class="event-agencies">Consumer Product Safety Commission</div>
+                </div>
+            </li>
+        
+            
+            
+            <li class="event-item">
+                <div class="event-date-col">
+                    <div class="event-day">15</div>
+                    <div class="event-month">Jun</div>
+                </div>
+                <div class="event-info">
+                    
+                    <span class="event-type-badge type-default">Comment Period</span>
+                    <div class="event-title"><a href="https://regulatorfb.com/doc/fr-2026-07167/">1,3,4,6,7,8-Hexahydro-4,6,6,7,8,8-Hexamethylcyclopenta [g]-2-Benzopyran (HHCB) and Phthalic Anhydride Draft Risk Evaluations Under the Toxic Substances Control Act (TSCA); Notice of Availability and Request for Comment</a></div>
                     <div class="event-agencies">Environmental Protection Agency</div>
                 </div>
             </li>
