@@ -1054,7 +1054,7 @@
                 <a href="#recent-docs">Recent Docs</a>
                 <a href="#features">Platform</a>
                 <a href="#how-it-works">How It Works</a>
-                <a href="#signup">Get Access</a>
+                <a href="#signup">Free Calendar</a>
                 <a href="/newsletter">Newsletter</a>
                 <a href="https://app.regulatorfb.com/login" class="nav-cta">Subscriber Login</a>
             </div>
@@ -1069,11 +1069,11 @@
                     <span class="hero-badge-dot"></span>
                     Monitoring key regulatory sources daily
                 </div>
-                <h1>F&amp;B regulatory intelligence, <em>delivered.</em></h1>
-                <p class="hero-sub">Searchable repository, compliance calendar, regulatory timeline, and weekly briefings &mdash; everything your compliance team needs to stay ahead of material regulatory changes.</p>
+                <h1>Free 2026 F&amp;B regulatory calendar, <em>delivered.</em></h1>
+                <p class="hero-sub">Track deadlines, comment periods, and regulatory watchpoints that matter for food &amp; beverage operators, QA leaders, and compliance teams &mdash; plus get the weekly briefing that explains what actually matters.</p>
                 <div class="hero-ctas">
-                    <a href="#signup" class="btn btn-primary">Request Early Access &rarr;</a>
-                    <a href="https://app.regulatorfb.com/login" class="btn btn-ghost">Subscriber Login</a>
+                    <a href="#signup" class="btn btn-primary">Get the free calendar &rarr;</a>
+                    <a href="/newsletter" class="btn btn-ghost">View the weekly briefing</a>
                 </div>
                 <div class="hero-proof">
                     <div class="hero-proof-item">
@@ -1407,8 +1407,8 @@
     <!-- SOURCE COVERAGE -->
     <section class="section-white" id="sources">
         <div class="section-inner-wide">
-            <div class="section-heading">Every source your team checks &mdash; monitored continuously</div>
-            <p class="section-sub">REGULATOR pulls from the same high-value sources your team scans manually, so nothing falls through the cracks.</p>
+            <div class="section-heading">Every source your team checks, covered continuously</div>
+            <p class="section-sub">REGULATOR tracks the same high-value regulatory channels your team scans manually, using direct feeds where available and Federal Register coverage where agencies make direct access harder.</p>
             <div class="source-grid">
                 <div class="source-card">
                     <div class="source-icon">FR</div>
@@ -1418,17 +1418,17 @@
                 <div class="source-card">
                     <div class="source-icon">FDA</div>
                     <div class="source-name">FDA</div>
-                    <div class="source-desc">Press releases, guidance, recalls</div>
+                    <div class="source-desc">Press releases, recalls, safety updates</div>
                 </div>
                 <div class="source-card">
                     <div class="source-icon">FSIS</div>
                     <div class="source-name">USDA / FSIS</div>
-                    <div class="source-desc">Inspection, food safety, enforcement</div>
+                    <div class="source-desc">Food safety and inspection actions, including Federal Register coverage</div>
                 </div>
                 <div class="source-card">
                     <div class="source-icon">EPA</div>
                     <div class="source-name">EPA</div>
-                    <div class="source-desc">Environmental compliance, PFAS</div>
+                    <div class="source-desc">Environmental compliance, PFAS, including Federal Register coverage</div>
                 </div>
                 <div class="source-card">
                     <div class="source-icon">FTC</div>
@@ -1451,6 +1451,7 @@
                     <div class="source-desc">International food standards</div>
                 </div>
             </div>
+            <p class="section-sub" style="margin-top:18px; max-width:900px;">Direct-source coverage is live today for FDA, FTC, OSHA, NIST, and Codex. For agencies with deprecated feeds or anti-bot barriers, REGULATOR bridges gaps with Federal Register and other stable public-source ingestion.</p>
         </div>
     </section>
 
@@ -1478,14 +1479,14 @@
     <section class="section-navy" id="signup">
         <div class="section-inner">
             <div class="final-cta">
-                <h2>Get early access &mdash; free while in beta</h2>
-                <p>Join compliance teams already tracking F&amp;B regulatory changes.</p>
-                <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
+                <h2>Get the free 2026 F&amp;B Regulatory Calendar</h2>
+                <p>Track deadlines, comment periods, and watchpoints that matter for food &amp; beverage operators, QA leaders, and compliance teams.</p>
+                <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST" data-offer-slug="calendar_2026" data-source="homepage_signup_section" data-campaign="calendar_launch" data-send-asset="true" data-grant-app-access="false">
                     <input type="email" name="email" placeholder="you@company.com" required>
-                    <button type="submit">Get Access</button>
+                    <button type="submit">Send me the calendar</button>
                 </form>
-                <div class="cta-note" id="signup-note">Free while in beta. Instant access — check your inbox.</div>
-                <div class="cta-note" id="signup-thanks" style="display:none;">You're in! Check your inbox for a login link to access the platform now.</div>
+                <div class="cta-note" id="signup-note">Free. Weekly briefing included.</div>
+                <div class="cta-note" id="signup-thanks" style="display:none;">Check your inbox — your calendar resources are on the way.</div>
             </div>
         </div>
     </section>
@@ -1513,7 +1514,14 @@ document.querySelectorAll('.signup-form').forEach(function(form) {
             var resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: email })
+                body: JSON.stringify({
+                    email: email,
+                    offer_slug: form.dataset.offerSlug || 'calendar_2026',
+                    source: form.dataset.source || 'homepage_signup_section',
+                    campaign: form.dataset.campaign || 'calendar_launch',
+                    send_asset: form.dataset.sendAsset !== 'false',
+                    grant_app_access: form.dataset.grantAppAccess === 'true'
+                })
             });
             if (resp.ok) {
                 form.style.display = 'none';
