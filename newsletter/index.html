@@ -350,18 +350,18 @@
 <section class="hero">
     <div class="hero-content">
         <div class="brand">Regulator<span class="interpunct"> · </span>FB</div>
-        <h1>The weekly F&amp;B regulatory briefing — plus the free 2026 planning calendar</h1>
-        <p>Start with the free calendar, then get the weekly Regulator · FB briefing covering what changed, why it matters, and what deserves attention.</p>
+        <h1>F&B Regulatory Intelligence, Delivered Daily</h1>
+        <p>FDA recalls, USDA rule changes, labeling updates, and compliance deadlines — scanned, classified, and summarized before your morning coffee.</p>
 
-        <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST" data-offer-slug="calendar_2026" data-source="newsletter_page" data-campaign="calendar_launch" data-send-asset="true" data-grant-app-access="false">
+        <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
             <input type="email" name="email" placeholder="you@company.com" required>
-            <button type="submit">Get the calendar</button>
-            <p class="form-note">Free calendar + weekly briefing. Unsubscribe anytime.</p>
+            <button type="submit">Get the Newsletter</button>
+            <p class="form-note">Free weekly digest. Unsubscribe anytime.</p>
         </form>
 
         <div class="thank-you" id="thank-you">
-            <h3>Check your inbox.</h3>
-            <p>Your calendar resources are on the way.</p>
+            <h3>You are in.</h3>
+            <p>The weekly digest arrives every Monday.</p>
         </div>
     </div>
 </section>
@@ -381,9 +381,9 @@
             <p>Federal Register filings, FSMA updates, and state-level regulation changes — caught the day they publish.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">&#128197;</div>
-            <h3>2026 Planning Calendar</h3>
-            <p>A practical planning tool covering deadlines, comment periods, and watchpoints your team can actually use.</p>
+            <div class="feature-icon">&#128196;</div>
+            <h3>Compliance Deadlines</h3>
+            <p>Comment periods, effective dates, and enforcement timelines so nothing catches you off guard.</p>
         </div>
     </div>
 </section>
@@ -408,12 +408,12 @@
 
 <!-- Bottom CTA -->
 <section class="cta">
-    <h2>Get the free 2026 F&amp;B Regulatory Calendar</h2>
-    <p>Start with the planning tool, then get the weekly briefing that helps separate meaningful changes from noise.</p>
-    <form class="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST" data-offer-slug="calendar_2026" data-source="newsletter_bottom_cta" data-campaign="calendar_launch" data-send-asset="true" data-grant-app-access="false">
+    <h2>Stop Chasing Regulations</h2>
+    <p>Let them come to you. Join QA directors and food safety professionals who start their day informed.</p>
+    <form class="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
         <input type="email" name="email" placeholder="you@company.com" required>
-        <button type="submit">Send me the calendar</button>
-        <p class="form-note">Free calendar + weekly briefing. No spam. Unsubscribe anytime.</p>
+        <button type="submit">Get the Newsletter</button>
+        <p class="form-note">Free weekly digest. No spam. Unsubscribe anytime.</p>
     </form>
 </section>
 
@@ -434,14 +434,7 @@ document.querySelectorAll('.signup-form').forEach(function(form) {
             const resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    email: email,
-                    offer_slug: form.dataset.offerSlug || 'calendar_2026',
-                    source: form.dataset.source || 'newsletter_page',
-                    campaign: form.dataset.campaign || 'calendar_launch',
-                    send_asset: form.dataset.sendAsset !== 'false',
-                    grant_app_access: form.dataset.grantAppAccess === 'true'
-                })
+                body: JSON.stringify({ email: email })
             });
             if (resp.ok) {
                 form.style.display = 'none';
