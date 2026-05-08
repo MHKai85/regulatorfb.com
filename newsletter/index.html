@@ -350,18 +350,18 @@
 <section class="hero">
     <div class="hero-content">
         <div class="brand">Regulator<span class="interpunct"> · </span>FB</div>
-        <h1>F&B Regulatory Intelligence, Delivered Daily</h1>
-        <p>FDA recalls, USDA rule changes, labeling updates, and compliance deadlines — scanned, classified, and summarized before your morning coffee.</p>
+        <h1>The weekly F&amp;B regulatory briefing — plus a planning calendar your team can actually use</h1>
+        <p>Start with the free 2026 calendar and editable worksheet, then get the weekly Regulator · FB briefing that helps you decide what matters now versus what can wait.</p>
 
-        <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
+        <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST" data-offer-slug="calendar_2026" data-source="newsletter_page" data-campaign="calendar_launch" data-send-asset="true" data-grant-app-access="false">
             <input type="email" name="email" placeholder="you@company.com" required>
-            <button type="submit">Get the Newsletter</button>
-            <p class="form-note">Free weekly digest. Unsubscribe anytime.</p>
+            <button type="submit">Send me the calendar</button>
+            <p class="form-note">Free planning calendar + editable worksheet + weekly briefing.</p>
         </form>
 
         <div class="thank-you" id="thank-you">
-            <h3>You are in.</h3>
-            <p>The weekly digest arrives every Monday.</p>
+            <h3>Check your inbox.</h3>
+            <p>Your planning calendar and worksheet are on the way.</p>
         </div>
     </div>
 </section>
@@ -381,9 +381,9 @@
             <p>Federal Register filings, FSMA updates, and state-level regulation changes — caught the day they publish.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">&#128196;</div>
-            <h3>Compliance Deadlines</h3>
-            <p>Comment periods, effective dates, and enforcement timelines so nothing catches you off guard.</p>
+            <div class="feature-icon">&#128197;</div>
+            <h3>2026 Planning Calendar</h3>
+            <p>A shareable planning tool with dates, watchpoints, and an editable worksheet your team can adapt instead of starting from scratch.</p>
         </div>
     </div>
 </section>
@@ -408,12 +408,12 @@
 
 <!-- Bottom CTA -->
 <section class="cta">
-    <h2>Stop Chasing Regulations</h2>
-    <p>Let them come to you. Join QA directors and food safety professionals who start their day informed.</p>
-    <form class="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
+    <h2>Get the free 2026 F&amp;B planning calendar</h2>
+    <p>Use it as a working tracker for your team — then let the weekly briefing tell you which developments deserve attention.</p>
+    <form class="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST" data-offer-slug="calendar_2026" data-source="newsletter_bottom_cta" data-campaign="calendar_launch" data-send-asset="true" data-grant-app-access="false">
         <input type="email" name="email" placeholder="you@company.com" required>
-        <button type="submit">Get the Newsletter</button>
-        <p class="form-note">Free weekly digest. No spam. Unsubscribe anytime.</p>
+        <button type="submit">Send me the calendar</button>
+        <p class="form-note">Free calendar, editable worksheet, and weekly briefing. No spam.</p>
     </form>
 </section>
 
@@ -434,7 +434,14 @@ document.querySelectorAll('.signup-form').forEach(function(form) {
             const resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: email })
+                body: JSON.stringify({
+                    email: email,
+                    offer_slug: form.dataset.offerSlug || 'calendar_2026',
+                    source: form.dataset.source || 'newsletter_page',
+                    campaign: form.dataset.campaign || 'calendar_launch',
+                    send_asset: form.dataset.sendAsset !== 'false',
+                    grant_app_access: form.dataset.grantAppAccess === 'true'
+                })
             });
             if (resp.ok) {
                 form.style.display = 'none';
