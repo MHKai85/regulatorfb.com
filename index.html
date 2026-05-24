@@ -205,6 +205,25 @@
             margin-bottom: 36px;
         }
 
+        .hero-outcomes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: -18px 0 30px;
+        }
+
+        .hero-outcomes span {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border: 1px solid rgba(255,255,255,0.16);
+            border-radius: 999px;
+            background: rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.82);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
         .hero-ctas {
             display: flex;
             gap: 12px;
@@ -1071,7 +1090,12 @@
                     Monitoring key regulatory sources daily
                 </div>
                 <h1>F&amp;B regulatory intelligence, <em>delivered.</em></h1>
-                <p class="hero-sub">Searchable repository, compliance calendar, regulatory timeline, and weekly briefings &mdash; everything your compliance team needs to stay ahead of material regulatory changes.</p>
+                <p class="hero-sub">Track FDA, USDA, FSIS, and food-safety rule changes before they impact your operation.</p>
+                <div class="hero-outcomes" aria-label="Key outcomes">
+                    <span>Fewer compliance misses</span>
+                    <span>Better audit prep</span>
+                    <span>Faster triage</span>
+                </div>
                 <div class="hero-ctas">
                     <a href="#signup" class="btn btn-primary">Request Early Access &rarr;</a>
                     <a href="https://app.regulatorfb.com/login" class="btn btn-ghost">Subscriber Login</a>
@@ -1147,9 +1171,9 @@
                                     <span class="mini-badge type">Notice</span>
                                 </div>
                                 <div class="mini-table-row">
-                                    <div class="mini-doc-title">Pesticide Tolerances; Registration Review</div>
-                                    <span class="mini-badge src">EPA</span>
-                                    <span class="mini-badge type">Proposed</span>
+                                    <div class="mini-doc-title">FSMA Traceability Records; Compliance Deadline</div>
+                                    <span class="mini-badge src">FSMA</span>
+                                    <span class="mini-badge type">Framework</span>
                                 </div>
                             </div>
                         </div>
@@ -1163,7 +1187,7 @@
     <section class="section-cream">
         <div class="section-inner-wide">
             <div class="section-heading">The regulatory monitoring problem is a math problem</div>
-            <p class="section-sub">Regulators and public sources publish hundreds of documents every week. Your job is to find the handful that affect your operation &mdash; before they affect your operation.</p>
+            <p class="section-sub">Regulators and public sources publish hundreds of documents every week. Your job is to find the handful that affect your operation &mdash; early enough to prevent missed deadlines, strengthen audit prep, and triage what actually deserves attention.</p>
             <div class="problem-grid">
                 <div class="problem-card">
                     <div class="problem-number">500+</div>
@@ -1193,7 +1217,7 @@
                 <div class="feature-card">
                     <div class="feature-card-icon">&#9776;</div>
                     <div class="feature-card-title">Searchable Repository</div>
-                    <div class="feature-card-desc">Full-text search across regulatory documents. Filter by source, document type, and date range. Every document links to its original source.</div>
+                    <div class="feature-card-desc">Full-text search across regulatory documents. Filter by source, document type, framework, and date range. Every document links to its original source.</div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-card-icon">&#9635;</div>
@@ -1239,7 +1263,7 @@
                         </li>
                         <li>
                             <span class="feature-check">&#10003;</span>
-                            Editorial commentary &mdash; not raw legal text
+                            Business-impact commentary and “why it matters” summaries &mdash; not raw legal text
                         </li>
                         <li>
                             <span class="feature-check">&#10003;</span>
