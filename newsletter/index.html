@@ -356,6 +356,7 @@
 
         <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
             <input type="email" name="email" placeholder="you@company.com" required>
+            <input type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
             <button type="submit">Get the Newsletter</button>
             <p class="form-note">Free weekly digest. Unsubscribe anytime.</p>
         </form>
@@ -427,15 +428,29 @@
 </footer>
 
 <script>
+function regulatorSignupAttribution() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        landing_page: window.location.href,
+        document_referrer: document.referrer || '',
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        utm_content: params.get('utm_content') || '',
+        utm_term: params.get('utm_term') || ''
+    };
+}
 document.querySelectorAll('.signup-form').forEach(function(form) {
     form.addEventListener('submit', async function(e) {
         e.preventDefault();
         const email = form.querySelector('input[type="email"]').value;
+        const companyWebsite = (form.querySelector('input[name="company_website"]') || {}).value || '';
+        const payload = Object.assign({ email: email, offer_slug: 'newsletter', source: 'newsletter_page', intent: 'newsletter', grant_app_access: false, company_website: companyWebsite }, regulatorSignupAttribution());
         try {
             const resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: email, offer_slug: 'newsletter', source: 'newsletter_page', intent: 'newsletter', grant_app_access: false })
+                body: JSON.stringify(payload)
             });
             if (resp.ok) {
                 form.style.display = 'none';

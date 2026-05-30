@@ -1508,6 +1508,7 @@
                 <p>Join compliance teams already tracking F&amp;B regulatory changes.</p>
                 <form class="signup-form" id="signup-form" action="https://app.regulatorfb.com/api/subscribe" method="POST">
                     <input type="email" name="email" placeholder="you@company.com" required>
+                    <input type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
                     <button type="submit">Request Access</button>
                 </form>
                 <div class="cta-note" id="signup-note">Free while in beta. We review access requests before enabling accounts.</div>
@@ -1531,15 +1532,29 @@
     </footer>
 
 <script>
+function regulatorSignupAttribution() {
+    var params = new URLSearchParams(window.location.search);
+    return {
+        landing_page: window.location.href,
+        document_referrer: document.referrer || '',
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        utm_content: params.get('utm_content') || '',
+        utm_term: params.get('utm_term') || ''
+    };
+}
 document.querySelectorAll('.signup-form').forEach(function(form) {
     form.addEventListener('submit', async function(e) {
         e.preventDefault();
         var email = form.querySelector('input[type="email"]').value;
+        var companyWebsite = (form.querySelector('input[name="company_website"]') || {}).value || '';
+        var payload = Object.assign({ email: email, offer_slug: 'beta_access', source: 'homepage_access_cta', intent: 'app_access_request', grant_app_access: false, company_website: companyWebsite }, regulatorSignupAttribution());
         try {
             var resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: email, offer_slug: 'beta_access', source: 'homepage_access_cta', intent: 'app_access_request', grant_app_access: false })
+                body: JSON.stringify(payload)
             });
             if (resp.ok) {
                 form.style.display = 'none';
