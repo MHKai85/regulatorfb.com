@@ -435,7 +435,7 @@ document.querySelectorAll('.signup-form').forEach(function(form) {
             const resp = await fetch('https://app.regulatorfb.com/api/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: email })
+                body: JSON.stringify({ email: email, offer_slug: 'newsletter', source: 'newsletter_page', intent: 'newsletter', grant_app_access: false })
             });
             if (resp.ok) {
                 form.style.display = 'none';
