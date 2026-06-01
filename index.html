@@ -1014,6 +1014,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 32px;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
         }
 
         .footer-logo {
@@ -1024,6 +1031,46 @@
         }
 
         .footer-logo span { color: var(--accent-alert); }
+
+        .footer-social {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            max-width: 340px;
+            color: rgba(255,255,255,0.72);
+            font-size: 13px;
+            line-height: 1.45;
+            text-decoration: none;
+        }
+
+        .footer-social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            flex: 0 0 34px;
+            border-radius: 50%;
+            color: var(--navy-dark);
+            background: rgba(255,255,255,0.9);
+            transition: background 0.15s, transform 0.15s;
+        }
+
+        .footer-social:hover .footer-social-icon {
+            background: var(--white);
+            transform: translateY(-1px);
+        }
+
+        .footer-social-kicker {
+            display: block;
+            color: rgba(255,255,255,0.42);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .footer-social strong { color: var(--white); font-weight: 600; }
 
         .footer-links {
             display: flex;
@@ -1059,7 +1106,9 @@
             .section-heading { font-size: 32px; }
             .source-grid { grid-template-columns: 1fr; }
             .signup-form { flex-direction: column; }
-            .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+            .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+            .footer-brand { align-items: center; }
+            .footer-social { justify-content: center; }
             .footer-links { flex-wrap: wrap; justify-content: center; }
         }
     </style>
@@ -1352,6 +1401,23 @@
     </section>
 
     
+
+    <!-- TOPIC ARCHIVES -->
+    <section class="section-white" id="topic-archives">
+        <div class="section-inner-wide">
+            <div class="section-heading">Browse public regulatory topic archives</div>
+            <p class="section-sub">Focused entry points for the highest-value Regulator F&amp;B public pages. These archives help operators and search engines reach the most relevant document pages faster.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+                <a href="/topics/food-safety/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;text-decoration:none;color:#1e293b;"><strong style="color:#1a365d;display:block;margin-bottom:6px;">Food Safety</strong><span style="color:#64748b;font-size:14px;">Safety alerts, inspection updates, pathogen risks, and compliance deadlines.</span></a>
+                <a href="/topics/labeling-packaging/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;text-decoration:none;color:#1e293b;"><strong style="color:#1a365d;display:block;margin-bottom:6px;">Labeling &amp; Packaging</strong><span style="color:#64748b;font-size:14px;">Labeling, allergens, claims, standards, additives, and packaging signals.</span></a>
+                <a href="/topics/recalls/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;text-decoration:none;color:#1e293b;"><strong style="color:#1a365d;display:block;margin-bottom:6px;">Recalls</strong><span style="color:#64748b;font-size:14px;">Recall and market-withdrawal signals for F&amp;B teams.</span></a>
+                <a href="/topics/imports-trade/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;text-decoration:none;color:#1e293b;"><strong style="color:#1a365d;display:block;margin-bottom:6px;">Imports &amp; Trade</strong><span style="color:#64748b;font-size:14px;">Import, customs, tariff, supply-chain, and trade actions.</span></a>
+                <a href="/topics/fda/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;text-decoration:none;color:#1e293b;"><strong style="color:#1a365d;display:block;margin-bottom:6px;">FDA</strong><span style="color:#64748b;font-size:14px;">FDA food, additive, labeling, recall, and guidance updates.</span></a>
+                <a href="/topics/usda/" style="display:block;padding:18px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;text-decoration:none;color:#1e293b;"><strong style="color:#1a365d;display:block;margin-bottom:6px;">USDA</strong><span style="color:#64748b;font-size:14px;">USDA, FSIS, and AMS standards, inspection, and commodity updates.</span></a>
+            </div>
+        </div>
+    </section>
+
     <!-- RECENT DOCUMENTS -->
     <section class="section-cream" id="recent-docs">
         <div class="section-inner-wide">
@@ -1520,10 +1586,18 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
-            <div class="footer-logo">REGULATOR<span>&middot;</span>FB</div>
+            <div class="footer-brand">
+                <div class="footer-logo">REGULATOR<span>&middot;</span>FB</div>
+                <a class="footer-social" href="https://x.com/RegulatorFB" target="_blank" rel="noopener" aria-label="Follow Regulator F&B on X">
+                    <span class="footer-social-icon" aria-hidden="true">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M18.9 2h3.3l-7.2 8.2L23.5 22h-6.7l-5.2-6.8L5.6 22H2.3l7.7-8.8L1.8 2h6.8l4.7 6.2L18.9 2Zm-1.2 17.9h1.8L7.6 4H5.7l12 15.9Z"/></svg>
+                    </span>
+                    <span><span class="footer-social-kicker">Follow us on X</span>Get regulatory signals in real time from <strong>@RegulatorFB</strong>.</span>
+                </a>
+            </div>
             <div class="footer-links">
                 <a href="https://regulatorfb.com">regulatorfb.com</a>
-                <a href="https://x.com/RegulatorFB">@RegulatorFB</a>
+                <a href="https://x.com/RegulatorFB" target="_blank" rel="noopener">@RegulatorFB</a>
                 <a href="/newsletter">Newsletter</a>
                 <a href="https://app.regulatorfb.com/login">Subscriber Login</a>
                 <a href="/privacy">Privacy Policy</a>

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://regulatorfb.com/sitemap.xml
+Sitemap: https://regulatorfb.com/sitemap-priority.xml
