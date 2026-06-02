@@ -1,0 +1,31 @@
+# Regulator F&B
+
+Regulator F&B is a food and beverage regulatory intelligence service that summarizes FDA, USDA, Federal Register, recall, import, labeling, packaging, food-safety, and compliance-deadline updates for operators.
+
+## High-value public pages
+
+- Home: https://regulatorfb.com/
+- Operator guides: https://regulatorfb.com/guides/
+- Regulatory topic archives: https://regulatorfb.com/topics/
+- Compliance calendar: https://regulatorfb.com/calendar/
+- Newsletter: https://regulatorfb.com/newsletter/
+
+## Operator guides
+
+- What should food operators do after an FDA food recall?: https://regulatorfb.com/guides/fda-food-recall-response/
+- What does a USDA FSIS public health alert require from operators?: https://regulatorfb.com/guides/usda-fsis-public-health-alert/
+- What should food importers do after an FDA import alert?: https://regulatorfb.com/guides/fda-import-alert-food-importers/
+- How should packaged food brands handle labeling or packaging regulatory changes?: https://regulatorfb.com/guides/food-labeling-packaging-change/
+- How should F&amp;B companies track Federal Register comment deadlines?: https://regulatorfb.com/guides/federal-register-comment-deadlines/
+- What does a state food safety enforcement notice mean for multi-state operators?: https://regulatorfb.com/guides/state-food-safety-enforcement-notice/
+- How should food facilities triage new compliance dates?: https://regulatorfb.com/guides/food-facility-compliance-date-triage/
+- How should operators decide whether a regulatory brief needs action?: https://regulatorfb.com/guides/regulatory-brief-action-review/
+
+## Topic archives
+
+- Food Safety: https://regulatorfb.com/topics/food-safety/
+- Labeling &amp; Packaging: https://regulatorfb.com/topics/labeling-packaging/
+- Recalls: https://regulatorfb.com/topics/recalls/
+- Imports &amp; Trade: https://regulatorfb.com/topics/imports-trade/
+- FDA: https://regulatorfb.com/topics/fda/
+- USDA: https://regulatorfb.com/topics/usda/
