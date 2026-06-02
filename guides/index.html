@@ -6,11 +6,128 @@
     <title>Operator Guides for Food &amp; Beverage Compliance | Regulator F&amp;B</title>
     <meta name="description" content="Plain-English operator guides for FDA, USDA, recalls, imports, labeling, food safety, and regulatory deadline triage.">
     <link rel="canonical" href="https://regulatorfb.com/guides/">
-    <style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:#1e293b;max-width:1050px;margin:0 auto;padding:24px;background:#f8fafc}nav a,footer a{color:#0f766e;text-decoration:none;margin-right:16px}h1{font-size:42px;line-height:1.1;color:#0f172a}.lede{font-size:18px;color:#475569;max-width:760px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:24px}.card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px;text-decoration:none;color:#1e293b}.card strong{display:block;font-size:20px;line-height:1.25;color:#0f172a;margin-bottom:8px}.card:hover strong{color:#0f766e}.card span{color:#475569}.eyebrow{color:#0f766e;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}</style>
+    <meta property="og:title" content="Operator Guides for Food &amp; Beverage Compliance | Regulator F&amp;B">
+    <meta property="og:description" content="Plain-English operator guides for FDA, USDA, recalls, imports, labeling, food safety, and regulatory deadline triage.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://regulatorfb.com/guides/">
+    <meta property="og:image" content="https://regulatorfb.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a365d;
+            --navy-dark: #0f2440;
+            --navy-light: #2c4a7c;
+            --cream: #faf5eb;
+            --cream-dark: #f0e9db;
+            --white: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --accent-alert: #c05621;
+            --accent-alert-light: #fff7ed;
+            --accent-alert-dark: #9a4a1d;
+            --accent-success: #166534;
+            --accent-success-light: #f0fdf4;
+            --border: #e2e8f0;
+            --border-warm: #e5ded2;
+            --surface-warm: #fdfcfa;
+            --font-serif: 'Source Serif 4', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --radius: 4px;
+            --radius-lg: 6px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-sans); background: var(--white); color: var(--text-primary); line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; }
+        a { color: var(--accent-alert); }
+        .nav { background: var(--navy); padding: 0 40px; position: sticky; top: 0; z-index: 100; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; max-width: 1200px; margin: 0 auto; }
+        .logo { font-family: var(--font-serif); font-size: 28px; font-weight: 700; color: var(--white); letter-spacing: -0.02em; text-decoration: none; display: flex; align-items: center; }
+        .logo-dot { color: var(--accent-alert); margin: 0 4px; }
+        .logo-fb { font-family: var(--font-sans); font-size: 26px; font-weight: 600; color: rgba(255,255,255,0.85); letter-spacing: 0.02em; position: relative; top: 0.5px; }
+        .nav-links { display: flex; align-items: center; gap: 8px; }
+        .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: var(--radius); transition: all 0.15s; }
+        .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+        .nav-cta { background: var(--accent-alert) !important; color: var(--white) !important; font-weight: 600 !important; padding: 10px 20px !important; }
+        .nav-cta:hover { background: var(--accent-alert-dark) !important; }
+        .section { padding: 72px 40px; }
+        .section-cream { background: var(--cream); }
+        .section-inner { max-width: 1120px; margin: 0 auto; }
+        .section-label { display: inline-flex; align-items: center; gap: 8px; color: var(--accent-alert); font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+        .section-label::before { content: ''; width: 24px; height: 2px; background: var(--accent-alert); }
+        h1, h2, h3 { font-family: var(--font-serif); color: var(--navy); letter-spacing: -0.02em; }
+        .footer { background: var(--navy-dark); color: rgba(255,255,255,0.5); text-align: center; padding: 32px 24px; font-size: 13px; }
+        .footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+        .footer a:hover { color: var(--white); }
+        @media (max-width: 760px) {
+            .nav { padding: 0 18px; }
+            .nav-inner { height: auto; padding: 16px 0; align-items: flex-start; flex-direction: column; gap: 12px; }
+            .nav-links { flex-wrap: wrap; gap: 4px; }
+            .nav-links a { padding: 6px 10px; }
+            .logo { font-size: 24px; }
+            .logo-fb { font-size: 22px; }
+            .section { padding: 48px 20px; }
+        }
+
+        .hero { background: var(--navy); padding: 72px 40px 84px; color: var(--white); }
+        .hero-inner { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 56px; align-items: center; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 6px 16px; font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.8); margin-bottom: 26px; }
+        .hero-badge-dot { width: 8px; height: 8px; background: var(--accent-success); border-radius: 50%; }
+        .hero h1 { color: var(--white); font-size: 52px; line-height: 1.12; max-width: 740px; margin-bottom: 24px; }
+        .hero h1 em { color: var(--accent-alert); font-style: italic; }
+        .hero-sub { font-size: 18px; color: rgba(255,255,255,0.72); line-height: 1.7; max-width: 660px; }
+        .hero-panel { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius-lg); padding: 28px; }
+        .hero-panel-title { font-family: var(--font-serif); font-size: 24px; font-weight: 700; color: var(--white); margin-bottom: 14px; }
+        .hero-panel ul { list-style: none; }
+        .hero-panel li { color: rgba(255,255,255,0.72); padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.10); }
+        .hero-panel li:first-child { border-top: 0; }
+        .intro { max-width: 760px; margin-bottom: 34px; }
+        .intro h2 { font-size: 38px; line-height: 1.18; margin-bottom: 16px; }
+        .intro p { color: var(--text-secondary); font-size: 17px; line-height: 1.7; }
+        .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+        .guide-card { display: block; background: var(--white); border: 1px solid var(--border-warm); border-radius: var(--radius-lg); padding: 28px; text-decoration: none; color: var(--text-primary); transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+        .guide-card:hover { transform: translateY(-2px); border-color: #d8c9b5; box-shadow: 0 14px 34px rgba(26,54,93,0.08); }
+        .guide-card strong { display: block; font-family: var(--font-serif); font-size: 22px; line-height: 1.22; color: var(--navy); margin-bottom: 12px; }
+        .guide-card span { display: block; color: var(--text-secondary); font-size: 14px; line-height: 1.65; }
+        .guide-card .card-link { color: var(--accent-alert); font-weight: 700; margin-top: 16px; font-size: 13px; }
+        @media(max-width:900px) { .hero-inner { grid-template-columns: 1fr; } .hero-panel { max-width: 520px; } }
+        @media(max-width:760px) { .hero { padding: 48px 20px 58px; } .hero h1 { font-size: 36px; } }
+    </style>
 </head>
 <body>
-<header><nav><a href="https://regulatorfb.com/">Regulator F&amp;B</a><a href="https://regulatorfb.com/topics/">Topics</a><a href="https://regulatorfb.com/calendar/">Calendar</a><a href="https://regulatorfb.com/newsletter/">Newsletter</a></nav><div class="eyebrow">Operator guides</div><h1>Plain-English regulatory action guides for food &amp; beverage teams</h1><p class="lede">Short evergreen guides that help operators turn FDA, USDA, recall, import, labeling, food-safety, and deadline updates into action-required, monitor-only, or no-action decisions.</p></header>
-<main class="grid"><a class="card" href="https://regulatorfb.com/guides/fda-food-recall-response/"><strong>What should food operators do after an FDA food recall?</strong><span>A practical first-pass response checklist for F&amp;B teams when an FDA food recall or market withdrawal affects a product, ingredient, supplier, or adjacent category.</span></a><a class="card" href="https://regulatorfb.com/guides/usda-fsis-public-health-alert/"><strong>What does a USDA FSIS public health alert require from operators?</strong><span>How meat, poultry, egg-product, and adjacent F&amp;B teams should triage USDA FSIS public health alerts and related safety notices.</span></a><a class="card" href="https://regulatorfb.com/guides/fda-import-alert-food-importers/"><strong>What should food importers do after an FDA import alert?</strong><span>A practical triage guide for food importers, brokers, and brands when FDA import alerts or detention risk may affect shipments.</span></a><a class="card" href="https://regulatorfb.com/guides/food-labeling-packaging-change/"><strong>How should packaged food brands handle labeling or packaging regulatory changes?</strong><span>A practical review workflow for food and beverage teams when FDA, USDA, AMS, or state rules affect labels, claims, allergens, packaging, or standards.</span></a><a class="card" href="https://regulatorfb.com/guides/federal-register-comment-deadlines/"><strong>How should F&amp;B companies track Federal Register comment deadlines?</strong><span>How operators can decide whether a Federal Register notice or proposed rule deserves monitoring, a comment, or no action.</span></a><a class="card" href="https://regulatorfb.com/guides/state-food-safety-enforcement-notice/"><strong>What does a state food safety enforcement notice mean for multi-state operators?</strong><span>A practical triage guide for food and beverage operators when state food safety, agriculture, or health departments issue enforcement or compliance notices.</span></a><a class="card" href="https://regulatorfb.com/guides/food-facility-compliance-date-triage/"><strong>How should food facilities triage new compliance dates?</strong><span>A concise workflow for turning regulatory effective dates and compliance deadlines into assigned operational work.</span></a><a class="card" href="https://regulatorfb.com/guides/regulatory-brief-action-review/"><strong>How should operators decide whether a regulatory brief needs action?</strong><span>A general operating model for turning daily regulatory updates into action-required, monitor-only, or no-action decisions.</span></a></main>
-<footer><p><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p></footer>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="https://regulatorfb.com/" class="logo">REGULATOR<span class="logo-dot">&middot;</span><span class="logo-fb">F&amp;B</span></a>
+            <div class="nav-links">
+                <a href="https://regulatorfb.com/guides/">Guides</a>
+                <a href="https://regulatorfb.com/topics/">Topics</a>
+                <a href="https://regulatorfb.com/calendar/">Calendar</a>
+                <a href="https://regulatorfb.com/newsletter/">Newsletter</a>
+                <a href="https://app.regulatorfb.com/login" class="nav-cta">Log In</a>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-inner">
+            <div>
+                <div class="hero-badge"><span class="hero-badge-dot"></span> Operator guides</div>
+                <h1>Plain-English regulatory action guides for <em>food &amp; beverage teams</em></h1>
+                <p class="hero-sub">Evergreen decision guides for turning FDA, USDA, recall, import, labeling, food-safety, and deadline updates into action-required, monitor-only, or no-action calls.</p>
+            </div>
+            <aside class="hero-panel" aria-label="Guide outcomes">
+                <div class="hero-panel-title">Built for faster triage</div>
+                <ul><li>Identify who is affected</li><li>Convert notices into operating steps</li><li>Check primary sources and related briefs</li><li>Document action vs. monitor decisions</li></ul>
+            </aside>
+        </div>
+    </header>
+    <main class="section section-cream">
+        <div class="section-inner">
+            <div class="intro"><div class="section-label">Guide library</div><h2>Start with the regulatory signal in front of you.</h2><p>Each guide is designed to fit the Regulator F&amp;B workflow: screen the update, map the operational exposure, then decide what deserves action.</p></div>
+            <div class="guide-grid"><a class="guide-card" href="https://regulatorfb.com/guides/fda-food-recall-response/"><strong>What should food operators do after an FDA food recall?</strong><span>A practical first-pass response checklist for F&amp;B teams when an FDA food recall or market withdrawal affects a product, ingredient, supplier, or adjacent category.</span><span class="card-link">Read guide →</span></a><a class="guide-card" href="https://regulatorfb.com/guides/usda-fsis-public-health-alert/"><strong>What does a USDA FSIS public health alert require from operators?</strong><span>How meat, poultry, egg-product, and adjacent F&amp;B teams should triage USDA FSIS public health alerts and related safety notices.</span><span class="card-link">Read guide →</span></a><a class="guide-card" href="https://regulatorfb.com/guides/fda-import-alert-food-importers/"><strong>What should food importers do after an FDA import alert?</strong><span>A practical triage guide for food importers, brokers, and brands when FDA import alerts or detention risk may affect shipments.</span><span class="card-link">Read guide →</span></a><a class="guide-card" href="https://regulatorfb.com/guides/food-labeling-packaging-change/"><strong>How should packaged food brands handle labeling or packaging regulatory changes?</strong><span>A practical review workflow for food and beverage teams when FDA, USDA, AMS, or state rules affect labels, claims, allergens, packaging, or standards.</span><span class="card-link">Read guide →</span></a><a class="guide-card" href="https://regulatorfb.com/guides/federal-register-comment-deadlines/"><strong>How should F&amp;B companies track Federal Register comment deadlines?</strong><span>How operators can decide whether a Federal Register notice or proposed rule deserves monitoring, a comment, or no action.</span><span class="card-link">Read guide →</span></a><a class="guide-card" href="https://regulatorfb.com/guides/state-food-safety-enforcement-notice/"><strong>What does a state food safety enforcement notice mean for multi-state operators?</strong><span>A practical triage guide for food and beverage operators when state food safety, agriculture, or health departments issue enforcement or compliance notices.</span><span class="card-link">Read guide →</span></a><a class="guide-card" href="https://regulatorfb.com/guides/food-facility-compliance-date-triage/"><strong>How should food facilities triage new compliance dates?</strong><span>A concise workflow for turning regulatory effective dates and compliance deadlines into assigned operational work.</span><span class="card-link">Read guide →</span></a><a class="guide-card" href="https://regulatorfb.com/guides/regulatory-brief-action-review/"><strong>How should operators decide whether a regulatory brief needs action?</strong><span>A general operating model for turning daily regulatory updates into action-required, monitor-only, or no-action decisions.</span><span class="card-link">Read guide →</span></a></div>
+        </div>
+    </main>
+    <footer class="footer"><p>REGULATOR &middot; F&amp;B &mdash; Federal regulatory intelligence for food &amp; beverage</p><p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p></footer>
 </body>
 </html>
