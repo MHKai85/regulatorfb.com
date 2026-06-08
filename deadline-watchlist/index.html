@@ -71,26 +71,150 @@
         .tag { display:inline-block; font-size:10px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; padding:2px 6px; border-radius:999px; margin-left:4px; background:var(--accent-alert); color:#fff; }
         .row strong { display:block; color:var(--navy); font-size:14px; line-height:1.3; }
         .row span { color:var(--text-secondary); font-size:12px; }
-        .form-box { background:var(--navy); color:var(--white); border-radius:var(--radius-lg); padding:34px; display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:28px; align-items:center; }
+        .form-box { background:var(--navy); color:var(--white); border-radius:var(--radius-lg); padding:34px; display:grid; grid-template-columns:minmax(0,0.78fr) minmax(360px,1fr); gap:30px; align-items:start; }
         .form-box h2 { color:var(--white); font-size:34px; margin-bottom:10px; }
         .form-box p { color:rgba(255,255,255,0.76); }
         .fields { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.14); border-radius:var(--radius-lg); padding:20px; }
         .fields ul { margin-left:18px; color:rgba(255,255,255,0.78); font-size:14px; }
         .fields li { margin:6px 0; }
+        .intake-card { background:var(--white); color:var(--text-primary); border-radius:var(--radius-lg); padding:22px; box-shadow:0 18px 55px rgba(15,36,64,0.24); }
+        .intake-progress { display:flex; gap:8px; margin-bottom:18px; }
+        .intake-step-dot { flex:1; height:5px; border-radius:999px; background:var(--border); }
+        .intake-step-dot.active { background:var(--accent-alert); }
+        .intake-card h3 { font-family:var(--font-serif); color:var(--navy); font-size:26px; line-height:1.15; margin-bottom:8px; }
+        .intake-card .microcopy { color:var(--text-secondary); font-size:13px; margin-bottom:16px; line-height:1.55; }
+        .intake-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+        .intake-field { margin-bottom:12px; }
+        .intake-field label { display:block; color:var(--navy); font-weight:700; font-size:12px; margin-bottom:5px; }
+        .intake-field input, .intake-field select, .intake-field textarea { width:100%; border:1px solid var(--border); border-radius:var(--radius); padding:11px 12px; font:inherit; font-size:14px; background:#fff; color:var(--text-primary); }
+        .intake-field textarea { min-height:74px; resize:vertical; }
+        .intake-hidden { display:none; }
+        .checkbox-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0 12px; }
+        .checkbox-grid label { display:flex; align-items:center; gap:7px; font-size:13px; color:var(--text-primary); border:1px solid var(--border); border-radius:var(--radius); padding:8px 9px; }
+        .intake-actions { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:8px; }
+        .intake-actions button { border:0; cursor:pointer; }
+        .btn-muted { background:#eef2f7; color:var(--navy); }
+        .intake-status { min-height:20px; margin-top:10px; color:var(--text-secondary); font-size:13px; }
+        .intake-status.ok { color:var(--accent-success); }
+        .intake-status.err { color:var(--accent-alert-dark); }
+        .privacy-note { margin-top:12px; color:var(--text-muted); font-size:11px; line-height:1.45; }
         .footer { background:var(--navy-dark); color:rgba(255,255,255,0.5); text-align:center; padding:32px 24px; font-size:13px; }
         .footer a { color:rgba(255,255,255,0.7); text-decoration:none; }
-        @media(max-width:920px) { .hero-inner,.sample,.form-box { grid-template-columns:1fr; } .grid { grid-template-columns:1fr; } .hero h1 { font-size:40px; } }
+        @media(max-width:920px) { .hero-inner,.sample,.form-box { grid-template-columns:1fr; } .grid,.intake-grid,.checkbox-grid { grid-template-columns:1fr; } .hero h1 { font-size:40px; } }
         @media(max-width:760px) { .nav { padding:0 18px; } .nav-inner { height:auto; padding:16px 0; flex-direction:column; align-items:flex-start; gap:12px; } .nav-links { flex-wrap:wrap; gap:4px; } .nav-links a { padding:6px 10px; } .hero,.section { padding-left:20px; padding-right:20px; } .hero h1 { font-size:34px; } }
     </style>
 </head>
 <body>
     <nav class="nav"><div class="nav-inner"><a href="https://regulatorfb.com/" class="logo">REGULATOR<span class="logo-dot">&middot;</span><span class="logo-fb">F&amp;B</span></a><div class="nav-links"><a href="https://regulatorfb.com/guides/">Guides</a><a href="https://regulatorfb.com/topics/">Topics</a><a href="https://regulatorfb.com/calendar/">Calendar</a><a href="https://regulatorfb.com/newsletter/">Newsletter</a><a href="https://app.regulatorfb.com/login" class="nav-cta" rel="nofollow">Log In</a></div></div></nav>
-    <header class="hero"><div class="hero-inner"><div><div class="hero-badge"><span class="hero-badge-dot"></span> Custom compliance monitoring for F&amp;B operators</div><h1>A weekly action brief tailored to <em>your products</em></h1><p class="hero-sub">Regulator filters FDA, USDA, TTB, state, packaging, labeling, recall, trade, and ingredient-input signals against your company profile — then sends a dense weekly brief showing what needs action, what to monitor, and what can be ignored.</p><div class="hero-ctas"><a href="mailto:hello@regulatorfb.com?subject=Regulator%20Weekly%20Action%20Brief%20sample" class="btn btn-primary">Request your first custom brief</a><a href="#sample" class="btn btn-secondary">View beverage co-packer sample</a></div></div><aside class="hero-panel"><div class="price">$99 <span>/ month</span></div><p>First custom brief is free. If useful, continue with a weekly tailored brief for one company profile.</p><ul><li>Customer-specific open review backlog</li><li>Source links and next action dates</li><li>Owner and recommended posture</li><li>Email-first delivery + PDF share copy</li></ul></aside></div></header>
+    <header class="hero"><div class="hero-inner"><div><div class="hero-badge"><span class="hero-badge-dot"></span> Custom compliance monitoring for F&amp;B operators</div><h1>A weekly action brief tailored to <em>your products</em></h1><p class="hero-sub">Regulator filters FDA, USDA, TTB, state, packaging, labeling, recall, trade, and ingredient-input signals against your company profile — then sends a dense weekly brief showing what needs action, what to monitor, and what can be ignored.</p><div class="hero-ctas"><a href="#intake" class="btn btn-primary">Start your free custom brief</a><a href="#sample" class="btn btn-secondary">View beverage co-packer sample</a></div></div><aside class="hero-panel"><div class="price">$99 <span>/ month</span></div><p>First custom brief is free. If useful, continue with a weekly tailored brief for one company profile.</p><ul><li>Customer-specific open review backlog</li><li>Source links and next action dates</li><li>Owner and recommended posture</li><li>Email-first delivery + PDF share copy</li></ul></aside></div></header>
     <main>
         <section class="section section-cream"><div class="section-inner"><div class="intro"><div class="section-label">Why it exists</div><h2>Regulatory monitoring is an operations problem.</h2><p>Food and beverage teams do not just need to know that a rule exists. They need to know whether it affects a customer launch, label, formula, ingredient, packaging format, facility calendar, state distribution plan, or sourcing decision.</p></div><div class="grid"><article class="card"><h3>Action required</h3><p>Items likely to need owner assignment, label/formula review, facility calendar entry, customer communication, procurement review, or operational follow-up.</p></article><article class="card"><h3>Watchlist / monitor</h3><p>Relevant items that may affect your business, but do not require immediate action yet. These stay in the backlog until the next action date resolves.</p></article><article class="card"><h3>No action recommended</h3><p>Items that crossed the F&amp;B filter but appear unlikely to affect your current products, states, customers, or ingredients — documented so your team can move on.</p></article></div></div></section>
         <section id="sample" class="section"><div class="section-inner"><div class="intro"><div class="section-label">Sample format</div><h2>Built around an open review backlog, not a generic alert feed.</h2><p>New source items enter your profile-specific backlog with a source link and next action date. The weekly brief sorts the full open list by closest action date and adds deeper operator insight boxes when an item deserves context.</p></div><div class="sample"><div class="sample-copy"><h3>Beverage co-packer sample</h3><p>Example profile: U.S. beverage co-packer serving CPG customers across functional drinks, juices, RTD alcohol, CSD, sparkling water, and adjacent products.</p><p>The brief combines newsletter-style source reads, a dated open review backlog, and dense operator insight boxes for claims, packaging, input risk, and customer-launch exposure.</p><a href="https://regulatorfb.com/samples/regulator-weekly-action-brief-beverage-copacker.pdf" class="btn btn-primary">Download sample PDF</a></div><div class="backlog"><div class="row"><div class="date">Jun 15</div><div><strong>Lot-Level Food Traceability Public Meeting <span class="tag">New</span></strong><span>Owner: QA / Compliance · Action required</span></div></div><div class="row"><div class="date">Jun 29</div><div><strong>Food Additive Petition: Remove Certain Solvents <span class="tag">New</span></strong><span>Owner: R&amp;D / Procurement · Action required</span></div></div><div class="row"><div class="date">Jul 13</div><div><strong>BHT Request for Information</strong><span>Owner: R&amp;D / Regulatory · Watchlist / monitor</span></div></div><div class="row"><div class="date">Jul 21</div><div><strong>Aluminum in Pesticide Formulations</strong><span>No action recommended · negative-filter example</span></div></div></div></div></div></section>
-        <section class="section section-cream"><div class="section-inner"><div class="form-box"><div><h2>Request your first custom brief.</h2><p>Send your company profile and Regulator will prepare a first sample brief at no cost. If it is useful, continue for $99/month.</p><p style="margin-top:14px;"><a href="mailto:hello@regulatorfb.com?subject=Regulator%20Weekly%20Action%20Brief%20sample" class="btn btn-primary">Email us your profile</a></p></div><div class="fields"><strong>Useful intake details</strong><ul><li>Company type and products</li><li>States or regions sold into</li><li>Alcohol / TTB exposure</li><li>Packaging formats and claims</li><li>Key ingredients and input risks</li><li>Biggest regulatory worry</li></ul></div></div></div></section>
+        <section id="intake" class="section section-cream"><div class="section-inner"><div class="form-box"><div><div class="section-label">First custom brief free</div><h2>Start with your email. Build the profile next.</h2><p>Regulator can save your request immediately, then use the profile details to tailor the first Weekly Action Brief to your products, states, claims, ingredients, and deadlines.</p><div class="fields" style="margin-top:20px;"><strong>Why the profile matters</strong><ul><li>Filters out irrelevant rules before they reach your inbox</li><li>Maps each item to likely owner, timing, and posture</li><li>Creates a persistent open review backlog for your company</li><li>No login required for the first custom brief</li></ul></div></div><form class="intake-card" id="brief-intake-form"><div class="intake-progress"><span class="intake-step-dot active" id="intake-dot-1"></span><span class="intake-step-dot" id="intake-dot-2"></span></div><div id="intake-step-1"><h3>Where should we send it?</h3><p class="microcopy">We save this first so you are not lost if you do not finish the full profile.</p><div class="intake-field"><label for="intake-email">Work email *</label><input id="intake-email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"></div><div class="intake-grid"><div class="intake-field"><label for="intake-name">Name</label><input id="intake-name" name="name" autocomplete="name" placeholder="Your name"></div><div class="intake-field"><label for="intake-company">Company</label><input id="intake-company" name="company" autocomplete="organization" placeholder="Company name"></div></div><input class="intake-hidden" name="company_website" tabindex="-1" autocomplete="off"><div class="intake-actions"><button class="btn btn-primary" type="button" id="intake-save-email">Save email and continue</button><a class="btn btn-muted" href="mailto:hello@regulatorfb.com?subject=Regulator%20Weekly%20Action%20Brief%20sample">Prefer email?</a></div><div class="intake-status" id="intake-status-1"></div></div><div id="intake-step-2" class="intake-hidden"><h3>Build your operator profile.</h3><p class="microcopy">Answer what you can. The first brief will use this to separate action-required items from watchlist and no-action recommendations.</p><div class="intake-grid"><div class="intake-field"><label for="company-type">Company type</label><select id="company-type" name="company_type"><option value="">Select one</option><option>Beverage brand</option><option>Beverage co-packer</option><option>Food manufacturer</option><option>Meat / poultry processor</option><option>Seafood processor</option><option>Importer / distributor</option><option>Retail / foodservice operator</option><option>Ingredient supplier</option><option>Other F&amp;B operator</option></select></div><div class="intake-field"><label for="states-regions">States / regions sold into</label><input id="states-regions" name="states_regions" placeholder="e.g. CA, TX, NY, national"></div></div><div class="intake-field"><label>Product exposure</label><div class="checkbox-grid"><label><input type="checkbox" name="product_exposure" value="Functional beverages"> Functional beverages</label><label><input type="checkbox" name="product_exposure" value="Juice / dairy / RTD"> Juice / dairy / RTD</label><label><input type="checkbox" name="product_exposure" value="Alcohol / TTB"> Alcohol / TTB</label><label><input type="checkbox" name="product_exposure" value="Meat / poultry / seafood"> Meat / poultry / seafood</label><label><input type="checkbox" name="product_exposure" value="Supplements-adjacent claims"> Supplements-adjacent claims</label><label><input type="checkbox" name="product_exposure" value="Imported ingredients"> Imported ingredients</label></div></div><div class="intake-grid"><div class="intake-field"><label for="packaging-claims">Packaging, labels, claims</label><textarea id="packaging-claims" name="packaging_claims" placeholder="Cans, PET, glass, organic, natural, nutrient/function claims, allergens..."></textarea></div><div class="intake-field"><label for="ingredient-risks">Ingredients / input risks</label><textarea id="ingredient-risks" name="ingredient_risks" placeholder="Colors, preservatives, caffeine, sweeteners, imported inputs, PFAS packaging..."></textarea></div></div><div class="intake-field"><label for="biggest-worry">Biggest regulatory worry</label><textarea id="biggest-worry" name="biggest_worry" placeholder="What would make this brief genuinely useful next week?"></textarea></div><div class="intake-actions"><button class="btn btn-primary" type="submit">Request my first custom brief</button><button class="btn btn-muted" type="button" id="intake-back">Back</button></div><div class="intake-status" id="intake-status-2"></div></div><p class="privacy-note">No ad pixels or behavioral tracking. Your profile is used to prepare the sample brief and follow up about Regulator Weekly Action Brief.</p></form></div></div></section>
     </main>
     <footer class="footer"><p>REGULATOR &middot; F&amp;B &mdash; Federal regulatory intelligence for food &amp; beverage</p><p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p></footer>
+    <script>
+    (function(){
+        const API_URL = 'https://app.regulatorfb.com/api/subscribe';
+        const form = document.getElementById('brief-intake-form');
+        if (!form) return;
+        const step1 = document.getElementById('intake-step-1');
+        const step2 = document.getElementById('intake-step-2');
+        const dot1 = document.getElementById('intake-dot-1');
+        const dot2 = document.getElementById('intake-dot-2');
+        const status1 = document.getElementById('intake-status-1');
+        const status2 = document.getElementById('intake-status-2');
+        const emailInput = document.getElementById('intake-email');
+        function setStep(n){
+            step1.classList.toggle('intake-hidden', n !== 1);
+            step2.classList.toggle('intake-hidden', n !== 2);
+            dot1.classList.toggle('active', n === 1);
+            dot2.classList.toggle('active', n === 2);
+        }
+        function profilePayload(stage){
+            const fd = new FormData(form);
+            const products = fd.getAll('product_exposure');
+            return {
+                email: (fd.get('email') || '').trim(),
+                name: (fd.get('name') || '').trim(),
+                company: (fd.get('company') || '').trim(),
+                company_website: (fd.get('company_website') || '').trim(),
+                offer_slug: 'weekly_action_brief',
+                source: 'deadline_watchlist',
+                intent: 'weekly_action_brief_request',
+                campaign: 'first_custom_brief',
+                profile_stage: stage,
+                company_type: fd.get('company_type') || '',
+                states_regions: fd.get('states_regions') || '',
+                product_exposure: products,
+                packaging_claims: fd.get('packaging_claims') || '',
+                ingredient_risks: fd.get('ingredient_risks') || '',
+                biggest_worry: fd.get('biggest_worry') || '',
+                landing_page: window.location.href,
+                document_referrer: document.referrer || ''
+            };
+        }
+        async function submitPayload(payload){
+            const res = await fetch(API_URL, {
+                method: 'POST',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify(payload)
+            });
+            const data = await res.json().catch(() => ({}));
+            if (!res.ok || data.success === false) throw new Error(data.error || 'Submit failed');
+            return data;
+        }
+        function mailtoFallback(payload){
+            const lines = [
+                'Please prepare a first Regulator Weekly Action Brief sample.',
+                '',
+                'Email: ' + (payload.email || ''),
+                'Name: ' + (payload.name || ''),
+                'Company: ' + (payload.company || ''),
+                'Company type: ' + (payload.company_type || ''),
+                'States / regions: ' + (payload.states_regions || ''),
+                'Product exposure: ' + ((payload.product_exposure || []).join(', ')),
+                'Packaging / claims: ' + (payload.packaging_claims || ''),
+                'Ingredients / input risks: ' + (payload.ingredient_risks || ''),
+                'Biggest worry: ' + (payload.biggest_worry || '')
+            ];
+            window.location.href = 'mailto:hello@regulatorfb.com?subject=Regulator%20Weekly%20Action%20Brief%20sample&body=' + encodeURIComponent(lines.join('\n'));
+        }
+        document.getElementById('intake-save-email').addEventListener('click', async function(){
+            if (!emailInput.checkValidity()) { emailInput.reportValidity(); return; }
+            const payload = profilePayload('email_capture');
+            status1.className = 'intake-status';
+            status1.textContent = 'Saving email…';
+            try {
+                await submitPayload(payload);
+                status1.className = 'intake-status ok';
+                status1.textContent = 'Saved. Now add the details that make the brief useful.';
+                setStep(2);
+            } catch (err) {
+                status1.className = 'intake-status err';
+                status1.textContent = 'Could not save automatically. You can continue and we will open an email fallback if needed.';
+                setStep(2);
+            }
+        });
+        document.getElementById('intake-back').addEventListener('click', function(){ setStep(1); });
+        form.addEventListener('submit', async function(e){
+            e.preventDefault();
+            if (!emailInput.checkValidity()) { setStep(1); emailInput.reportValidity(); return; }
+            const payload = profilePayload('profile_complete');
+            status2.className = 'intake-status';
+            status2.textContent = 'Submitting profile…';
+            try {
+                await submitPayload(payload);
+                status2.className = 'intake-status ok';
+                status2.textContent = 'Profile received. We will use this to prepare the first custom brief.';
+                form.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true);
+            } catch (err) {
+                status2.className = 'intake-status err';
+                status2.textContent = 'Automatic submit failed. Opening an email draft with your profile.';
+                mailtoFallback(payload);
+            }
+        });
+    })();
+    </script>
 </body>
 </html>
