@@ -77,7 +77,7 @@
         .fields { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.14); border-radius:var(--radius-lg); padding:20px; }
         .fields ul { margin-left:18px; color:rgba(255,255,255,0.78); font-size:14px; }
         .fields li { margin:6px 0; }
-        .intake-card { background:var(--white); color:var(--text-primary); border-radius:var(--radius-lg); padding:22px; box-shadow:0 18px 55px rgba(15,36,64,0.24); }
+        .intake-card { background:var(--white); color:var(--text-primary); border-radius:var(--radius-lg); padding:22px; box-shadow:0 18px 55px rgba(15,36,64,0.24); overflow:hidden; }
         .intake-progress { display:flex; gap:8px; margin-bottom:18px; }
         .intake-step-dot { flex:1; height:5px; border-radius:999px; background:var(--border); }
         .intake-step-dot.active { background:var(--accent-alert); }
@@ -86,12 +86,13 @@
         .intake-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
         .intake-field { margin-bottom:12px; }
         .intake-field label { display:block; color:var(--navy); font-weight:700; font-size:12px; margin-bottom:5px; }
-        .intake-field input, .intake-field select, .intake-field textarea { width:100%; border:1px solid var(--border); border-radius:var(--radius); padding:11px 12px; font:inherit; font-size:14px; background:#fff; color:var(--text-primary); }
+        .intake-field input:not([type="checkbox"]), .intake-field select, .intake-field textarea { width:100%; border:1px solid var(--border); border-radius:var(--radius); padding:11px 12px; font:inherit; font-size:14px; background:#fff; color:var(--text-primary); }
         .intake-field textarea { min-height:74px; resize:vertical; }
         .intake-hidden { display:none; }
         .checkbox-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0 12px; }
-        .checkbox-grid label { display:flex; align-items:center; gap:7px; font-size:13px; color:var(--text-primary); border:1px solid var(--border); border-radius:var(--radius); padding:8px 9px; }
-        .intake-actions { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:8px; }
+        .checkbox-grid label { display:flex; align-items:flex-start; gap:8px; font-size:13px; line-height:1.35; color:var(--text-primary); border:1px solid var(--border); border-radius:var(--radius); padding:9px 10px; min-height:44px; }
+        .checkbox-grid input[type="checkbox"] { width:16px; height:16px; flex:0 0 16px; margin-top:1px; }
+        .intake-actions { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:8px; position:relative; z-index:2; }
         .intake-actions button { border:0; cursor:pointer; }
         .btn-muted { background:#eef2f7; color:var(--navy); }
         .intake-status { min-height:20px; margin-top:10px; color:var(--text-secondary); font-size:13px; }
