@@ -204,7 +204,8 @@
             status2.className = 'intake-status';
             status2.textContent = 'Submitting profile…';
             try {
-                await submitPayload(payload);
+                const data = await submitPayload(payload);
+                if (!data.intake_profile_received) throw new Error('Profile storage unavailable');
                 status2.className = 'intake-status ok';
                 status2.textContent = 'Profile received. We will use this to prepare the first custom brief.';
                 form.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true);
