@@ -223,6 +223,36 @@
             color: var(--text-secondary);
             margin-bottom: 8px;
         }
+        .context-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .context-link-card {
+            display: block;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px 16px;
+            background: var(--surface-warm);
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        .context-link-card strong {
+            display: block;
+            color: var(--navy);
+            font-size: 14px;
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+        .context-link-card span {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .context-link-card:hover { border-color: #d8c9b5; }
         .document-summary {
             margin: 20px 0 24px;
             padding: 14px 18px;
@@ -315,6 +345,18 @@
             
             <p>The practical question is whether this changes food safety, labeling, operational compliance, or supplier risk. If it does, pull the source document and decide whether the item needs action now, monitoring, or no response.</p>
             
+            
+            <div class="context-links" aria-label="Related topic archives and operator guides">
+                
+                <a class="context-link-card" href="https://regulatorfb.com/topics/imports-trade/"><span>Topic archive</span><strong>Imports &amp; Trade updates</strong></a>
+                
+                <a class="context-link-card" href="https://regulatorfb.com/topics/usda/"><span>Topic archive</span><strong>USDA updates</strong></a>
+                
+                
+                <a class="context-link-card" href="https://regulatorfb.com/guides/regulatory-brief-action-review/"><span>Operator guide</span><strong>How should operators decide whether a regulatory brief needs action?</strong></a>
+                
+            </div>
+            
         </div>
         
         <a href="https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10079" class="source-link" target="_blank" rel="noopener">View original source document</a>
@@ -323,6 +365,15 @@
         <section class="related-docs">
             <h2>Related regulatory documents</h2>
             <ul class="related-list">
+                
+                <li class="related-item">
+                    <a href="https://regulatorfb.com/doc/rss-international-efsa-58b64618-310e-45ae-8b9a-490c78ca1fcf/">Safety evaluation of the food enzyme subtilisin from the genetically modified Bacillus licheniformis strain NZYM-PD</a>
+                    <div class="related-meta">
+                        International - EFSA &middot;
+                        News/Update &middot;
+                        June 8, 2026
+                    </div>
+                </li>
                 
                 <li class="related-item">
                     <a href="https://regulatorfb.com/doc/rss-international-efsa-5cc60593-9aac-43f3-9122-db03e5f49f88/">Revised safety evaluation of the food enzyme catalase from the non-genetically modified Aspergillus niger strain CTS2093</a>
@@ -369,15 +420,6 @@
                     </div>
                 </li>
                 
-                <li class="related-item">
-                    <a href="https://regulatorfb.com/doc/rss-international-efsa-98f2c369-e94a-4072-82ba-02671c3b82df/">Safety evaluation of the food enzyme containing metalloendopeptidase and leucyl aminopeptidase activities from the non-genetically modified Aspergillus oryzae strain HBI-POP01</a>
-                    <div class="related-meta">
-                        International - EFSA &middot;
-                        News/Update &middot;
-                        May 20, 2026
-                    </div>
-                </li>
-                
             </ul>
         </section>
         
@@ -391,5 +433,6 @@
         <p>REGULATOR &middot; F&amp;B &mdash; Federal regulatory intelligence for food &amp; beverage</p>
         <p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p>
     </footer>
+
 </body>
 </html>

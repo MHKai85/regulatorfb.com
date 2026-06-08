@@ -223,6 +223,36 @@
             color: var(--text-secondary);
             margin-bottom: 8px;
         }
+        .context-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .context-link-card {
+            display: block;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px 16px;
+            background: var(--surface-warm);
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        .context-link-card strong {
+            display: block;
+            color: var(--navy);
+            font-size: 14px;
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+        .context-link-card span {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .context-link-card:hover { border-color: #d8c9b5; }
         .document-summary {
             margin: 20px 0 24px;
             padding: 14px 18px;
@@ -315,6 +345,16 @@
             
             <p>Federal Register items are often early signals. Even when they look procedural, they can affect comment windows, effective dates, or how suppliers and plants plan around upcoming changes.</p>
             
+            
+            <div class="context-links" aria-label="Related topic archives and operator guides">
+                
+                <a class="context-link-card" href="https://regulatorfb.com/topics/imports-trade/"><span>Topic archive</span><strong>Imports &amp; Trade updates</strong></a>
+                
+                
+                <a class="context-link-card" href="https://regulatorfb.com/guides/regulatory-brief-action-review/"><span>Operator guide</span><strong>How should operators decide whether a regulatory brief needs action?</strong></a>
+                
+            </div>
+            
         </div>
         
         <a href="https://www.federalregister.gov/documents/2026/04/02/2026-06441/finding-of-failure-to-attain-the-2006-24-hour-pm25-standards-california-san-joaquin-valley-error" class="source-link" target="_blank" rel="noopener">View original source document</a>
@@ -391,5 +431,6 @@
         <p>REGULATOR &middot; F&amp;B &mdash; Federal regulatory intelligence for food &amp; beverage</p>
         <p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p>
     </footer>
+
 </body>
 </html>
