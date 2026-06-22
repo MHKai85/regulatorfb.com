@@ -189,11 +189,17 @@ In...">
             font-size: 15px;
             margin-bottom: 20px;
         }
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
         .cta-btn {
             display: inline-block;
             background: var(--accent-alert);
             color: var(--white);
-            padding: 12px 32px;
+            padding: 12px 24px;
             border-radius: var(--radius);
             text-decoration: none;
             font-weight: 600;
@@ -201,6 +207,11 @@ In...">
             transition: background 0.15s;
         }
         .cta-btn:hover { background: var(--accent-alert-dark); }
+        .cta-btn-secondary {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.35);
+        }
+        .cta-btn-secondary:hover { background: rgba(255,255,255,0.2); }
         .source-link {
             display: inline-block;
             margin-top: 16px;
@@ -310,6 +321,8 @@ In...">
             h1 { font-size: 24px; }
             .abstract { padding: 16px; font-size: 15px; }
             .cta-box { padding: 24px 16px; }
+            .cta-actions { align-items: stretch; }
+            .cta-btn { width: 100%; }
         }
     </style>
 </head>
@@ -339,7 +352,7 @@ In...">
         <div class="abstract">
             <p>Deal threatened to raise prices and reduce innovation for cataract laser eye surgery systems, impacting surgeons and millions of American patients
 In response to the announcement that Alcon, Inc. and...</p>
-            <span class="read-more">Sign up to read the full analysis</span>
+            <span class="read-more">Want the full context? Use Regulator to track the source, deadlines, and weekly briefing.</span>
         </div>
         <div class="document-summary">Document type: News/Update. Agency: FTC. Published: 2026-03-17.</div>
         <div class="context-box">
@@ -365,6 +378,15 @@ In response to the announcement that Alcon, Inc. and...</p>
         <section class="related-docs">
             <h2>Related regulatory documents</h2>
             <ul class="related-list">
+                
+                <li class="related-item">
+                    <a href="https://regulatorfb.com/doc/rss-ftc-333315/">FTC Approves Final Consent Order in Micromarket Kiosks Deal</a>
+                    <div class="related-meta">
+                        FTC &middot;
+                        News/Update &middot;
+                        June 17, 2026
+                    </div>
+                </li>
                 
                 <li class="related-item">
                     <a href="https://regulatorfb.com/doc/rss-ftc-333085/">FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims</a>
@@ -411,29 +433,22 @@ In response to the announcement that Alcon, Inc. and...</p>
                     </div>
                 </li>
                 
-                <li class="related-item">
-                    <a href="https://regulatorfb.com/doc/rss-ftc-330686/">FTC Takes Action Against TruHeight for Deceptive and Unsubstantiated Advertising of Supposed Height-Enhancing Supplements for Kids and Teens</a>
-                    <div class="related-meta">
-                        FTC &middot;
-                        News/Update &middot;
-                        April 13, 2026
-                    </div>
-                </li>
-                
             </ul>
         </section>
         
         <div class="cta-box">
-            <h2>Track this document and its deadlines</h2>
-            <p>Get the full analysis, comment period alerts, and compliance calendar -- free for F&amp;B professionals.</p>
-            <a href="https://app.regulatorfb.com/login" class="cta-btn" rel="nofollow">Sign Up Free</a>
+            <h2>Turn this source item into a compliance workflow</h2>
+            <p>Get weekly F&amp;B regulatory briefings, deadline tracking, and beta access to the searchable Regulator workspace.</p>
+            <div class="cta-actions">
+                <a href="https://regulatorfb.com/newsletter/?utm_source=public_doc&amp;utm_medium=doc_cta&amp;utm_campaign=conversion" class="cta-btn">Get the weekly briefing</a>
+                <a href="https://regulatorfb.com/?utm_source=public_doc&amp;utm_medium=doc_cta&amp;utm_campaign=beta_access#signup" class="cta-btn cta-btn-secondary">Request beta access</a>
+            </div>
         </div>
     </main>
     <footer class="footer">
         <p>REGULATOR &middot; F&amp;B &mdash; Federal regulatory intelligence for food &amp; beverage</p>
         <p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p>
     </footer>
-
     <script src="https://regulatorfb.com/assets/doc-prompt-ab.js" defer></script>
 
 </body>

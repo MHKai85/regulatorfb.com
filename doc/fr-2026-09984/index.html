@@ -186,11 +186,17 @@
             font-size: 15px;
             margin-bottom: 20px;
         }
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
         .cta-btn {
             display: inline-block;
             background: var(--accent-alert);
             color: var(--white);
-            padding: 12px 32px;
+            padding: 12px 24px;
             border-radius: var(--radius);
             text-decoration: none;
             font-weight: 600;
@@ -198,6 +204,11 @@
             transition: background 0.15s;
         }
         .cta-btn:hover { background: var(--accent-alert-dark); }
+        .cta-btn-secondary {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.35);
+        }
+        .cta-btn-secondary:hover { background: rgba(255,255,255,0.2); }
         .source-link {
             display: inline-block;
             margin-top: 16px;
@@ -307,6 +318,8 @@
             h1 { font-size: 24px; }
             .abstract { padding: 16px; font-size: 15px; }
             .cta-box { padding: 24px 16px; }
+            .cta-actions { align-items: stretch; }
+            .cta-btn { width: 100%; }
         }
     </style>
 </head>
@@ -335,7 +348,7 @@
         <h1>Certain Preserved Mushrooms from Chile, China, India, and Indonesia; Scheduling of Expedited Five-Year Reviews</h1>
         <div class="abstract">
             <p>The Commission hereby gives notice of the scheduling of expedited reviews pursuant to the Tariff Act of 1930 (&#34;the Act&#34;) to determine whether revocation of the antidumping duty orders on certain...</p>
-            <span class="read-more">Sign up to read the full analysis</span>
+            <span class="read-more">Want the full context? Use Regulator to track the source, deadlines, and weekly briefing.</span>
         </div>
         <div class="document-summary">Document type: Notice. Agency: International Trade Commission. Published: 2026-05-19.</div>
         <div class="context-box">
@@ -420,16 +433,18 @@
         </section>
         
         <div class="cta-box">
-            <h2>Track this document and its deadlines</h2>
-            <p>Get the full analysis, comment period alerts, and compliance calendar -- free for F&amp;B professionals.</p>
-            <a href="https://app.regulatorfb.com/login" class="cta-btn" rel="nofollow">Sign Up Free</a>
+            <h2>Turn this source item into a compliance workflow</h2>
+            <p>Get weekly F&amp;B regulatory briefings, deadline tracking, and beta access to the searchable Regulator workspace.</p>
+            <div class="cta-actions">
+                <a href="https://regulatorfb.com/newsletter/?utm_source=public_doc&amp;utm_medium=doc_cta&amp;utm_campaign=conversion" class="cta-btn">Get the weekly briefing</a>
+                <a href="https://regulatorfb.com/?utm_source=public_doc&amp;utm_medium=doc_cta&amp;utm_campaign=beta_access#signup" class="cta-btn cta-btn-secondary">Request beta access</a>
+            </div>
         </div>
     </main>
     <footer class="footer">
         <p>REGULATOR &middot; F&amp;B &mdash; Federal regulatory intelligence for food &amp; beverage</p>
         <p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p>
     </footer>
-
     <script src="https://regulatorfb.com/assets/doc-prompt-ab.js" defer></script>
 
 </body>

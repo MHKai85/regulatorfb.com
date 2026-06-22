@@ -186,11 +186,17 @@
             font-size: 15px;
             margin-bottom: 20px;
         }
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
         .cta-btn {
             display: inline-block;
             background: var(--accent-alert);
             color: var(--white);
-            padding: 12px 32px;
+            padding: 12px 24px;
             border-radius: var(--radius);
             text-decoration: none;
             font-weight: 600;
@@ -198,6 +204,11 @@
             transition: background 0.15s;
         }
         .cta-btn:hover { background: var(--accent-alert-dark); }
+        .cta-btn-secondary {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.35);
+        }
+        .cta-btn-secondary:hover { background: rgba(255,255,255,0.2); }
         .source-link {
             display: inline-block;
             margin-top: 16px;
@@ -307,6 +318,8 @@
             h1 { font-size: 24px; }
             .abstract { padding: 16px; font-size: 15px; }
             .cta-box { padding: 24px 16px; }
+            .cta-actions { align-items: stretch; }
+            .cta-btn { width: 100%; }
         }
     </style>
 </head>
@@ -335,7 +348,7 @@
         <h1>Air Plan Approval; Missouri; Revisions to Existing Rule 10 CSR 10-5.570; Control of Sulfur Emissions From Stationary Boilers</h1>
         <div class="abstract">
             <p>The Environmental Protection Agency (EPA) is taking direct final action to approve revisions to the Missouri State Implementation Plan (SIP) submitted by the Missouri Department of Natural Resources...</p>
-            <span class="read-more">Sign up to read the full analysis</span>
+            <span class="read-more">Want the full context? Use Regulator to track the source, deadlines, and weekly briefing.</span>
         </div>
         <div class="document-summary">Document type: Rule. Agency: Environmental Protection Agency. Published: 2026-04-09.</div>
         <div class="context-box">
@@ -363,6 +376,42 @@
             <ul class="related-list">
                 
                 <li class="related-item">
+                    <a href="https://regulatorfb.com/doc/fr-2026-12418/">Pesticide Product Registration; Receipt of Applications for New Active Ingredients (March 2026)</a>
+                    <div class="related-meta">
+                        Environmental Protection Agency &middot;
+                        Notice &middot;
+                        June 22, 2026
+                    </div>
+                </li>
+                
+                <li class="related-item">
+                    <a href="https://regulatorfb.com/doc/fr-2026-12426/">EPCRA Hazardous Chemical Inventory Reporting Requirements: Conformity With the 2024 OSHA Hazard Communication Standard</a>
+                    <div class="related-meta">
+                        Environmental Protection Agency &middot;
+                        Rule &middot;
+                        June 22, 2026
+                    </div>
+                </li>
+                
+                <li class="related-item">
+                    <a href="https://regulatorfb.com/doc/fr-2026-12417/">Receipt of Pesticide Petitions Filed for Residues of Pesticide Chemicals in or on Various Commodities-March 2026</a>
+                    <div class="related-meta">
+                        Environmental Protection Agency &middot;
+                        Proposed Rule &middot;
+                        June 22, 2026
+                    </div>
+                </li>
+                
+                <li class="related-item">
+                    <a href="https://regulatorfb.com/doc/fr-2026-12272/">Resin Acids, Esters With Glycerol in Pesticide Formulations; Exemption From the Requirement for a Tolerance</a>
+                    <div class="related-meta">
+                        Environmental Protection Agency &middot;
+                        Rule &middot;
+                        June 18, 2026
+                    </div>
+                </li>
+                
+                <li class="related-item">
                     <a href="https://regulatorfb.com/doc/fr-2026-11942/">Receipt of Pesticide Petitions Filed for Residues of Pesticide Chemicals in or on Various Commodities-February 2026</a>
                     <div class="related-meta">
                         Environmental Protection Agency &middot;
@@ -380,56 +429,22 @@
                     </div>
                 </li>
                 
-                <li class="related-item">
-                    <a href="https://regulatorfb.com/doc/fr-2026-11940/">Pydiflumetofen; Pesticide Tolerances</a>
-                    <div class="related-meta">
-                        Environmental Protection Agency &middot;
-                        Rule &middot;
-                        June 15, 2026
-                    </div>
-                </li>
-                
-                <li class="related-item">
-                    <a href="https://regulatorfb.com/doc/fr-2026-11848/">Pesticide Product Registration; Receipt of Applications for New Uses (January 2026)</a>
-                    <div class="related-meta">
-                        Environmental Protection Agency &middot;
-                        Notice &middot;
-                        June 12, 2026
-                    </div>
-                </li>
-                
-                <li class="related-item">
-                    <a href="https://regulatorfb.com/doc/fr-2026-11844/">Receipt of Pesticide Petitions Filed for Residues of Pesticide Chemicals in or on Various Commodities-January 2026</a>
-                    <div class="related-meta">
-                        Environmental Protection Agency &middot;
-                        Proposed Rule &middot;
-                        June 12, 2026
-                    </div>
-                </li>
-                
-                <li class="related-item">
-                    <a href="https://regulatorfb.com/doc/fr-2026-11731/">Finding of Failure To Attain the 2006 24-Hour PM2.5 Standards; California; San Joaquin Valley; Error Correction</a>
-                    <div class="related-meta">
-                        Environmental Protection Agency &middot;
-                        Rule &middot;
-                        June 11, 2026
-                    </div>
-                </li>
-                
             </ul>
         </section>
         
         <div class="cta-box">
-            <h2>Track this document and its deadlines</h2>
-            <p>Get the full analysis, comment period alerts, and compliance calendar -- free for F&amp;B professionals.</p>
-            <a href="https://app.regulatorfb.com/login" class="cta-btn" rel="nofollow">Sign Up Free</a>
+            <h2>Turn this source item into a compliance workflow</h2>
+            <p>Get weekly F&amp;B regulatory briefings, deadline tracking, and beta access to the searchable Regulator workspace.</p>
+            <div class="cta-actions">
+                <a href="https://regulatorfb.com/newsletter/?utm_source=public_doc&amp;utm_medium=doc_cta&amp;utm_campaign=conversion" class="cta-btn">Get the weekly briefing</a>
+                <a href="https://regulatorfb.com/?utm_source=public_doc&amp;utm_medium=doc_cta&amp;utm_campaign=beta_access#signup" class="cta-btn cta-btn-secondary">Request beta access</a>
+            </div>
         </div>
     </main>
     <footer class="footer">
         <p>REGULATOR &middot; F&amp;B &mdash; Federal regulatory intelligence for food &amp; beverage</p>
         <p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p>
     </footer>
-
     <script src="https://regulatorfb.com/assets/doc-prompt-ab.js" defer></script>
 
 </body>
