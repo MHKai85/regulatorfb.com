@@ -2,140 +2,420 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://regulatorfb.com/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://regulatorfb.com/newsletter/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://regulatorfb.com/calendar/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://regulatorfb.com/deadline-watchlist/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.88</priority>
     </url>
     <url>
         <loc>https://regulatorfb.com/guides/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/guides/fda-food-recall-response/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/guides/usda-fsis-public-health-alert/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/guides/fda-import-alert-food-importers/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/guides/food-labeling-packaging-change/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/guides/federal-register-comment-deadlines/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/guides/state-food-safety-enforcement-notice/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/guides/food-facility-compliance-date-triage/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/guides/regulatory-brief-action-review/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/topics/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/topics/food-safety/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.75</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/topics/labeling-packaging/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.75</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/topics/recalls/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.75</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/topics/imports-trade/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.75</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/topics/fda/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.75</priority>
     </url>
     
     <url>
         <loc>https://regulatorfb.com/topics/usda/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.75</priority>
     </url>
     
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-13054/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-13037/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-13040/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12996/</loc>
+        <lastmod>2026-06-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-82255/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-fda-3062b1b425/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-81988/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-82253/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-fda-22d8dc64ce/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12913/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-efsa-1368c56e-7062-4dc8-870e-8fa94632b540/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12962/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12963/</loc>
+        <lastmod>2026-06-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-fda-d400cf1f60/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12760/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12783/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12752/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12839/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-cdc-3471bdc829/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-cdc-2a9df4ea59/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-cdc-126b231539/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-fda-74f144653a/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12758/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12769/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12855/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12846/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/html-cbp-c71400afc7/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-efsa-4b5ff193-78ad-4308-b1a0-d93765243873/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12670/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12669/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12700/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-efsa-4fcb11ee-433a-4384-b8fe-e8e02890af37/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-fda-bdfc047d3b/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12578/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12577/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12579/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12484/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12460/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-efsa-010fbcef-09db-4b34-b27b-dedff5f3ce95/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/fr-2026-12473/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     
     <url>
         <loc>https://regulatorfb.com/doc/fr-2026-12418/</loc>
@@ -553,6 +833,13 @@
     <url>
         <loc>https://regulatorfb.com/doc/fr-2026-11644/</loc>
         <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/congress-gov-119-hr-9231/</loc>
+        <lastmod>2026-06-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -2064,13 +2351,6 @@
     
     <url>
         <loc>https://regulatorfb.com/doc/rss-international-efsa-daaa0e68-1ba6-4825-8a75-688ad9a1bd7a/</loc>
-        <lastmod>2026-05-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <url>
-        <loc>https://regulatorfb.com/doc/rss-fda-bdfc047d3b/</loc>
         <lastmod>2026-05-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -5894,6 +6174,20 @@
     <url>
         <loc>https://regulatorfb.com/doc/congress-gov-119-hr-407/</loc>
         <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-il-https-agr-illinois-gov-news-press-release-32643-html/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-il-https-agr-illinois-gov-news-press-release-32644-html/</loc>
+        
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
