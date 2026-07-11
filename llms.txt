@@ -8,7 +8,16 @@ Regulator F&B is a food and beverage regulatory intelligence service that summar
 - Operator guides: https://regulatorfb.com/guides/
 - Regulatory topic archives: https://regulatorfb.com/topics/
 - Compliance calendar: https://regulatorfb.com/calendar/
+- Regulatory deadlines: https://regulatorfb.com/deadlines/
 - Newsletter: https://regulatorfb.com/newsletter/
+
+## Regulatory deadline pages
+
+- BHT food comment deadline, July 13, 2026: https://regulatorfb.com/deadlines/bht-food-comment-deadline-july-2026/
+- Azodicarbonamide food comment deadline, July 13, 2026: https://regulatorfb.com/deadlines/azodicarbonamide-food-comment-deadline-july-2026/
+- Food traceability comments deadline, July 15, 2026: https://regulatorfb.com/deadlines/food-traceability-lot-level-comments-july-2026/
+- FSIS swine inspection effective date, July 20, 2026: https://regulatorfb.com/deadlines/fsis-swine-inspection-effective-july-2026/
+- National Organic Program sunset renewals, July 26, 2026: https://regulatorfb.com/deadlines/national-organic-program-sunset-renewals-july-2026/
 
 ## Operator guides
 
