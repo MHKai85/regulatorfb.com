@@ -9,6 +9,8 @@ Regulator F&B is a food and beverage regulatory intelligence service that summar
 - Regulatory topic archives: https://regulatorfb.com/topics/
 - Compliance calendar: https://regulatorfb.com/calendar/
 - Regulatory deadlines: https://regulatorfb.com/deadlines/
+- Sample Weekly Action Brief: https://regulatorfb.com/samples/beverage-copacker-action-brief/
+- Persona pages: https://regulatorfb.com/for/operations-leads/, https://regulatorfb.com/for/fsqa-managers/
 - Newsletter: https://regulatorfb.com/newsletter/
 
 ## Regulatory deadline pages
@@ -18,6 +20,12 @@ Regulator F&B is a food and beverage regulatory intelligence service that summar
 - Food traceability comments deadline, July 15, 2026: https://regulatorfb.com/deadlines/food-traceability-lot-level-comments-july-2026/
 - FSIS swine inspection effective date, July 20, 2026: https://regulatorfb.com/deadlines/fsis-swine-inspection-effective-july-2026/
 - National Organic Program sunset renewals, July 26, 2026: https://regulatorfb.com/deadlines/national-organic-program-sunset-renewals-july-2026/
+
+## Sample and persona pages
+
+- Sample Weekly Action Brief for a Beverage Co-Packer: https://regulatorfb.com/samples/beverage-copacker-action-brief/
+- Regulator Weekly Action Brief for Food Operations Leads: https://regulatorfb.com/for/operations-leads/
+- Regulator Weekly Action Brief for FSQA Managers: https://regulatorfb.com/for/fsqa-managers/
 
 ## Operator guides
 

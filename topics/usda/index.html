@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USDA Regulatory Updates | Regulator F&amp;B</title>
@@ -92,7 +93,13 @@
         .meta { color: var(--text-muted); font-size: 13px; margin-bottom: 8px; }
         .summary { color: var(--text-secondary); font-size: 14px; margin: 0; }
         .empty { background: var(--white); border: 1px dashed var(--border-warm); border-radius: var(--radius-lg); padding: 24px; color: var(--text-secondary); }
+        .brief-cta { background: var(--navy); color: var(--white); border-radius: var(--radius-lg); padding: 28px 30px; margin: 0 0 38px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; }
+        .brief-cta h2 { color: var(--white); font-size: 28px; line-height: 1.2; margin-bottom: 8px; }
+        .brief-cta p { color: rgba(255,255,255,0.76); max-width: 720px; }
+        .brief-cta .btn { display: inline-flex; align-items: center; justify-content: center; background: var(--accent-alert); color: var(--white); text-decoration: none; padding: 12px 20px; border-radius: var(--radius); font-weight: 700; white-space: nowrap; }
+        .brief-cta .btn:hover { background: var(--accent-alert-dark); }
         @media(max-width:760px) { .topic-hero { padding: 38px 20px 52px; } .topic-hero h1 { font-size: 34px; } .archive-heading { display: block; } }
+        @media(max-width:760px) { .brief-cta { grid-template-columns: 1fr; padding: 24px 20px; } .brief-cta .btn { width: 100%; } }
     </style>
 </head>
 <body>
@@ -126,7 +133,7 @@
                     
                     <a class="topic-pill" href="https://regulatorfb.com/topics/labeling-packaging/"><strong>Labeling &amp; Packaging</strong><span>Labeling, packaging, claims, standards of identity, allergens, color additives, packaging materi...</span></a>
                     
-                    <a class="topic-pill" href="https://regulatorfb.com/topics/recalls/"><strong>Recalls</strong><span>Recall and market-withdrawal signals for food, beverage, supplements, packaging-adjacent product...</span></a>
+                    <a class="topic-pill" href="https://regulatorfb.com/topics/recalls/"><strong>Recalls</strong><span>FDA and FSIS food recall alerts, market withdrawals, undeclared allergen notices, contamination ...</span></a>
                     
                     <a class="topic-pill" href="https://regulatorfb.com/topics/imports-trade/"><strong>Imports &amp; Trade</strong><span>Import, trade, customs, antidumping, supply-chain, tariff, and market-access regulatory signals ...</span></a>
                     
@@ -135,6 +142,13 @@
                     <a class="topic-pill" href="https://regulatorfb.com/topics/usda/"><strong>USDA</strong><span>USDA, FSIS, and AMS regulatory updates, inspection notices, grade standards, labeling, meat/poul...</span></a>
                     
                 </div>
+            </section>
+            <section class="brief-cta" aria-label="Weekly Action Brief">
+                <div>
+                    <h2>Need this filtered to your business?</h2>
+                    <p>Regulator turns food and beverage regulatory updates into a custom Weekly Action Brief with deadlines, likely impact, and next steps. Your first custom brief is free.</p>
+                </div>
+                <a class="btn" href="https://regulatorfb.com/deadline-watchlist/?src=topics#intake">Request your free brief</a>
             </section>
             <section>
                 <div class="archive-heading"><h2>Recent USDA documents</h2><div class="archive-count">127 public records</div></div>
@@ -182,6 +196,24 @@ Infant botulism is a rare but...</p>
                         <h2><a href="https://regulatorfb.com/doc/fr-2026-02314/">Listing of Color Additives Exempt From Certification; Spirulina Extract</a></h2>
                         <div class="meta">February 6, 2026 · Health and Human Services Department, Food and Drug Administration</div>
                         <p class="summary">The Food and Drug Administration (FDA or we) is amending the color additive regulations to provide for the expanded use of spirulina (Arthrospira platensis) extract as a color additive in human foods generally (except for infant formula, certain foods subject...</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-82316/">Highgate Tender Meats Ltd. brand Honey garlic sausage recalled due to undeclared wheat</a></h2>
+                        <div class="meta">July 10, 2026 · International</div>
+                        <p class="summary">The affected product is being recalled from the marketplace because it contains wheat which is not declared on the label.</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-82303/">Charlevoisienne and Joe Smoked Meat brand meat products recalled due to Listeria monocytogenes</a></h2>
+                        <div class="meta">July 10, 2026 · International</div>
+                        <p class="summary">The affected products are being recalled from the marketplace due to possible Listeria monocytogenes contamination.</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-cdc-695eb4e58f/">FSIS Issues Public Health Alert for A Ready-To-Eat Beef Jerky Product Due to Misbranding and Undeclared Allergenpha</a></h2>
+                        <div class="meta">July 3, 2026 · CDC</div>
+                        <p class="summary">WASHINGTON, JULY 3, 2026 - The U.S. Department of Agriculture&#39;s Food Safety and Inspection Service (FSIS) is issuing a public health alert for a beef jerky product due to misbranding...</p>
                     </article>
                     
                     <article class="doc-card">
@@ -275,12 +307,6 @@ Tue, 03/17/2026 - 08:59
                     </article>
                     
                     <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/rss-international-81988/">Ola-Ola brand Authentic Pounded Yam (Iyan) IYANINSTANT recalled due to undeclared milk</a></h2>
-                        <div class="meta">June 26, 2026 · International</div>
-                        <p class="summary">The affected product&amp;nbsp;is&amp;nbsp;being recalled from the marketplace because it&amp;nbsp;contains&amp;nbsp;milk which is not declared on the label.</p>
-                    </article>
-                    
-                    <article class="doc-card">
                         <h2><a href="https://regulatorfb.com/doc/rss-international-82030/">Galerie au chocolat brand plant based chocolate products recalled due to improperly declared milk</a></h2>
                         <div class="meta">May 5, 2026 · International</div>
                         <p class="summary">Galerie au chocolat brand plant based chocolate products recalled due to improperly declared milk.</p>
@@ -314,6 +340,24 @@ Tue, 03/17/2026 - 08:59
                         <h2><a href="https://regulatorfb.com/doc/fr-2026-09833/">Request for Information on Modified Organisms Subject to the Plant Protection Act</a></h2>
                         <div class="meta">May 15, 2026 · Agriculture Department, Unknown</div>
                         <p class="summary">The U.S. Department of Agriculture (USDA) proffers this Request for Information (RFI) to solicit the public&#39;s input on regulatory considerations related to the review of modified organisms subject to the Plant Protection Act. The information provided will...</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-82354/">Various brands of  meat products recalled due to Listeria monocytogenes</a></h2>
+                        <div class="meta">July 17, 2026 · International</div>
+                        <p class="summary">The affected products&amp;nbsp;are being recalled from the marketplace&amp;nbsp;due to possible Listeria monocytogenes&amp;nbsp;contamination.</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-82293/">The Butcher Barn brand meat products recalled due to undeclared mustard and soy</a></h2>
+                        <div class="meta">July 9, 2026 · International</div>
+                        <p class="summary">The affected products&amp;nbsp;are being recalled from the marketplace because they contain&amp;nbsp;mustard and soy which are not declared on the label.</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/fr-2026-13571/">Organic Certification Cost Share Program (OCCSP)</a></h2>
+                        <div class="meta">July 6, 2026 · Agriculture Department, Commodity Credit Corporation</div>
+                        <p class="summary">The One Big Beautiful Bill Act (OBBBA) provides funding for the Organic Certification Cost Share Program (OCCSP) for fiscal years 2025 through 2031, and, as a result, the Commodity Credit Corporation (CCC) is issuing this rule to establish OCCSP for 2025 and...</p>
                     </article>
                     
                     <article class="doc-card">
@@ -500,6 +544,24 @@ Tue, 03/17/2026 - 08:59
                         <h2><a href="https://regulatorfb.com/doc/fr-2026-05620/">Agency Information Collection Activities; Proposed Collection; Comment Request; Reporting Associated With Animal Drug and Animal Generic Drug User Fees</a></h2>
                         <div class="meta">March 23, 2026 · Health and Human Services Department, Food and Drug Administration</div>
                         <p class="summary">The Food and Drug Administration (FDA or Agency) is announcing an opportunity for public comment on the proposed collection of certain information by the Agency. Under the Paperwork Reduction Act of 1995 (PRA), Federal Agencies are required to publish notice...</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-efsa-8451a842-41c3-4a22-a0d8-c77f53355536/">Assessment of phenotypic carbapenem susceptibility and genomic epidemiology of Campylobacter from animal, food and human domains - “CarbaCamp”</a></h2>
+                        <div class="meta">July 10, 2026 · International - EFSA</div>
+                        <p class="summary">Emerging evidence of carbapenem non‐susceptibility led to the EFSA recommendation to include ertapenem in the resistance monitoring of Campylobacter from 2021. The CarbaCamp project investigated carbapenem susceptibility in C. coli and C. jejuni populations...</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-efsa-df7e7dfc-98bf-4376-b4fd-200307723c2c/">Safety evaluation of the food enzyme mannan endo-1,4-β-mannosidase from the non-genetically modified Aspergillus niger HBI-GM01</a></h2>
+                        <div class="meta">July 8, 2026 · International - EFSA</div>
+                        <p class="summary">The food enzyme mannan endo‐1,4‐β‐mannosidase (1,4‐β‐d‐mannan mannanohydrolase; EC 3.2.1.78) is produced with the non‐genetically modified Aspergillus niger strain HBI‐GM01 by HBI Enzymes Inc. The food enzyme was considered free from viable cells of the...</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/fr-2026-13761/">United States Standards for Grades of Carcass Beef</a></h2>
+                        <div class="meta">July 8, 2026 · Agriculture Department, Agricultural Marketing Service</div>
+                        <p class="summary">The U.S. Department of Agriculture&#39;s (USDA) Agricultural Marketing Service (AMS) is seeking public comments concerning revisions to the United States Standards for Grades of Carcass Beef. This request for comments stems from an American Wagyu Association...</p>
                     </article>
                     
                     <article class="doc-card">
@@ -752,6 +814,30 @@ Thu, 03/19/2026 - 12:09
                     </article>
                     
                     <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-efsa-9469c958-d318-4db8-8a99-6aee1726afaa/">Safety evaluation of the food enzyme pectin lyase from the non-genetically modified Aspergillus luchuensis strain CBS 141530</a></h2>
+                        <div class="meta">July 14, 2026 · International - EFSA</div>
+                        <p class="summary">The food enzyme pectin lyase (1,4‐6‐O‐methyl‐α‐D‐galacturonan lyase; EC 4.2.2.10) is produced with the non‐genetically modified Aspergillus luchuensis strain CBS 141530 by Solyve. The food enzyme was considered free from viable cells of the production...</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-efsa-147a512a-133e-45cd-a9c1-e6511f7ad970/">Safety evaluation of an extension of use of the food enzyme endo-1,3(4)-β-glucanase from the non-genetically modified Rasamsonia composticola strain 427-FS</a></h2>
+                        <div class="meta">July 10, 2026 · International - EFSA</div>
+                        <p class="summary">The food enzyme endo‐1,3(4)‐β‐glucanase (3‐(1,3; 1,4)‐β‐D‐glucan 3(4)‐glucanohydrolase; EC 3.2.1.6) is produced with the non‐genetically modified Rasamsonia composticola strain 427‐FS by Kerry Ingredients &amp;amp; Flavours Ltd. The safety of this food enzyme was...</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/rss-international-efsa-5ee6944a-b394-4884-8c91-4b41228801f1/">Safety evaluation of the food enzyme pectin lyase from the genetically modified Aspergillus niger strain CCTCC M 2023341</a></h2>
+                        <div class="meta">July 7, 2026 · International - EFSA</div>
+                        <p class="summary">The food enzyme pectin lyase (1,4‐6‐O‐methyl‐α‐d‐galacturonan lyase, EC 4.2.2.10) is produced with the genetically modified Aspergillus niger strain CCTCC M 2023341 by Suntaq International Limited. The genetic modifications do not give rise to safety...</p>
+                    </article>
+                    
+                    <article class="doc-card">
+                        <h2><a href="https://regulatorfb.com/doc/fr-2026-13552/">Pesticide Product Registration; Receipt of Applications for New Uses (April 2026)</a></h2>
+                        <div class="meta">July 6, 2026 · Environmental Protection Agency</div>
+                        <p class="summary">This document announces the Agency&#39;s receipt of and solicits comments on applications to register new pesticide products containing currently registered active ingredients that would entail a change in use pattern. The Agency is providing this notice in...</p>
+                    </article>
+                    
+                    <article class="doc-card">
                         <h2><a href="https://regulatorfb.com/doc/fr-2026-12417/">Receipt of Pesticide Petitions Filed for Residues of Pesticide Chemicals in or on Various Commodities-March 2026</a></h2>
                         <div class="meta">June 22, 2026 · Environmental Protection Agency</div>
                         <p class="summary">This document announces the Agency&#39;s receipt of and solicits public comment on initial filings of pesticide petitions requesting the establishment or modification of regulations for residues of pesticide chemicals in or on various commodities. The Agency is...</p>
@@ -884,90 +970,6 @@ Mon, 03/23/2026 - 15:16
                     </article>
                     
                     <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/fr-2026-05310/">Certain Chocolate Milk Powder and Packaging Thereof; Issuance of Civil Penalties and Termination of Enforcement Proceeding</a></h2>
-                        <div class="meta">March 18, 2026 · International Trade Commission</div>
-                        <p class="summary">Notice is hereby given that the U.S. International Trade Commission (&#34;Commission&#34;) has determined to impose civil penalties for violating the Commission&#39;s cease and desist orders (&#34;CDOs&#34;) issued on November 18, 2024 against each of the following four...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/rss-usda-ams-45857-at-https-www-ams-usda-gov/">USDA to Conduct Vote on Tart Cherry Marketing Order</a></h2>
-                        <div class="meta">March 16, 2026 · USDA-AMS</div>
-                        <p class="summary">USDA to Conduct Vote on Tart Cherry Marketing Order
-
-egarman
-
-Mon, 03/16/2026 - 10:02
-
-
-  
-    Date
-              March 16, 2026
-          
-
-            The U.S. Department of Agriculture (USDA) will conduct a referendum among eligible tart cherry growers and...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/fr-2026-05096/">Tart Cherries Grown in Michigan, New York, Pennsylvania, Oregon, Utah, Washington and Wisconsin; Continuance Referendum</a></h2>
-                        <div class="meta">March 16, 2026 · Agriculture Department, Agricultural Marketing Service</div>
-                        <p class="summary">This document directs that a referendum be conducted among eligible tart cherry growers and processors to determine whether they favor continuance of the marketing order regulating the handling of tart cherries grown in the states of Michigan, New York,...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/fr-2026-04316/">Addition of Sri Lanka to the List of Regions Affected by African Swine Fever</a></h2>
-                        <div class="meta">March 4, 2026 · Agriculture Department, Animal and Plant Health Inspection Service</div>
-                        <p class="summary">We are advising the public that we have added Sri Lanka to the Animal and Plant Health Inspection Service (APHIS) list maintained on the APHIS website of regions considered to be affected by African swine fever (ASF). We have taken this action because of the...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/state-state-ga-ff7cc43b95/">Highly Pathogenic Avian Influenza Confirmed in Backyard Flock in Pierce County, Georgia</a></h2>
-                        <div class="meta"> · Georgia Agriculture</div>
-                        <p class="summary">PIERCE COUNTY, GA – Today, the Georgia Department of Agriculture and the United States...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/fr-2026-10349/">Notice of Request for Revision to and Extension of Approval of an Information Collection; Highly Pathogenic Avian Influenza, All Subtypes, and Newcastle Disease; Additional Restrictions (Pet, Performing, and Research Birds; Bird Carcasses)</a></h2>
-                        <div class="meta">May 26, 2026 · Agriculture Department, Animal and Plant Health Inspection Service</div>
-                        <p class="summary">In accordance with the Paperwork Reduction Act of 1995, this notice announces the Animal and Plant Health Inspection Service&#39;s intention to request a revision to and extension of approval of an information collection associated with the regulations to prevent...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/fr-2026-12700/">Special Supplemental Nutrition Program for Women, Infants, and Children (WIC): Revisions in the WIC Food Packages; Delay of Vitamin D in Yogurt Implementation Date and Technical Corrections</a></h2>
-                        <div class="meta">June 24, 2026 · Agriculture Department, Food and Nutrition Administration</div>
-                        <p class="summary">On April 18, 2024, the Food and Nutrition Administration (FNA) published a final rule that revised the WIC food package regulations. The final rule contained incorrect table entries. This rule corrects those tables. In addition to the corrections, this rule...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/rss-international-efsa-21726e0e-b819-4cbe-b9c9-4b01aa293574/">Safety of a feed additive consisting monensin sodium (Elancoban® G200) for chickens for fattening and chickens reared for laying (Elanco GmbH)</a></h2>
-                        <div class="meta">June 19, 2026 · International - EFSA</div>
-                        <p class="summary">Following a request from the European Commission, EFSA was asked to deliver a scientific opinion on the characterisation of the production strain and on the safety for the target species of monensin sodium (Elancoban® G200). The current application is a...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/rss-international-efsa-e6b190ce-b231-48f1-8e95-5759c2a9094e/">Feasibility study on the Pathogens-in-Foods database</a></h2>
-                        <div class="meta">June 15, 2026 · International - EFSA</div>
-                        <p class="summary">The Pathogens‐in‐Foods (PIF) database is a database of systematically formatted occurrence data of the most important pathogenic bacteria, parasites and viruses present in foods produced, commercialised or consumed in Europe. Under standardised and harmonised...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/rss-ftc-333085/">FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims</a></h2>
-                        <div class="meta">June 12, 2026 · FTC</div>
-                        <p class="summary">The Federal Trade Commission has asked a federal court to hold in contempt dietary supplement provider Amare Global Holdings, its former Chief Science Officer Shawn Talbott and two others over allegations they violated an FTC order that banned Talbott and...</p>
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/state-state-fl-207b60dfbd/">Following Additional New World Screwworm Detections in Texas and New Mexico, Commissioner Wilton Simpson Strengthens and Extends Emergency Rule Pro...</a></h2>
-                        <div class="meta">June 10, 2026 · Florida FDACS</div>
-                        
-                    </article>
-                    
-                    <article class="doc-card">
-                        <h2><a href="https://regulatorfb.com/doc/rss-international-efsa-309fa302-faa4-4c2f-87f3-fc94d1612833/">Safety evaluation of the food enzyme glucan 1,4-α-glucosidase from the non-genetically modified Aspergillus niger strain AE-GN</a></h2>
-                        <div class="meta">June 10, 2026 · International - EFSA</div>
-                        <p class="summary">The food enzyme glucan 1,4‐α‐glucosidase (4‐α‐d‐glucan α‐glucohydrolase; EC 3.2.1.3) is produced with the non‐genetically modified Aspergillus niger strain AE‐GN by Amano Enzyme Inc. The food enzyme was considered free from viable cells of the production...</p>
-                    </article>
-                    
-                    <article class="doc-card">
                         <h2><a href="https://regulatorfb.com/doc/rss-usda-ams-45890-at-https-www-ams-usda-gov/">USDA Proposes Revisions to Frozen Asparagus Grade Standards</a></h2>
                         <div class="meta">April 10, 2026 · USDA-AMS</div>
                         <p class="summary">USDA Proposes Revisions to Frozen Asparagus Grade Standards
@@ -996,6 +998,6 @@ Fri, 04/10/2026 - 09:19
             </section>
         </div>
     </main>
-    <footer class="footer"><p>REGULATOR &middot; F&amp;B &mdash; Federal regulatory intelligence for food &amp; beverage</p><p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p></footer>
+    <footer class="footer"><p>REGULATOR &middot; F&amp;B - Federal regulatory intelligence for food &amp; beverage</p><p style="margin-top: 8px;"><a href="https://regulatorfb.com/">Home</a> &middot; <a href="https://regulatorfb.com/guides/">Guides</a> &middot; <a href="https://regulatorfb.com/topics/">Topics</a> &middot; <a href="https://regulatorfb.com/calendar/">Calendar</a> &middot; <a href="https://regulatorfb.com/newsletter/">Newsletter</a></p></footer>
 </body>
 </html>
