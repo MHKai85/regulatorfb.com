@@ -207,6 +207,34 @@
     
     
     <url>
+        <loc>https://regulatorfb.com/doc/rss-international-efsa-f9977784-cedb-4109-b401-3ffbd2591578/</loc>
+        <lastmod>2026-07-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-efsa-cb909af7-4f6f-46e0-b310-82915f7f3951/</loc>
+        <lastmod>2026-07-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-efsa-8d3ed9e2-2647-4857-bdf2-e66c0378fb8e/</loc>
+        <lastmod>2026-07-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/rss-international-efsa-8be86c36-4d13-4ea8-86a9-96951147e702/</loc>
+        <lastmod>2026-07-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
         <loc>https://regulatorfb.com/doc/fr-2026-15092/</loc>
         <lastmod>2026-07-27</lastmod>
         <changefreq>monthly</changefreq>
@@ -7125,6 +7153,13 @@
     <url>
         <loc>https://regulatorfb.com/doc/congress-gov-119-hr-407/</loc>
         <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://regulatorfb.com/doc/state-state-fl-816392aaa2/</loc>
+        
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
