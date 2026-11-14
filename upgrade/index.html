@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upgrade | Regulator F&amp;B</title>
-    <meta name="description" content="Compatibility landing page for Regulator F&amp;B newsletter upgrade links.">
+    <meta name="description" content="Regulator F&amp;B subscription confirmation and upgrade routing page.">
     <meta name="robots" content="noindex,follow">
     <link rel="canonical" href="https://regulatorfb.com/upgrade/">
-    <meta http-equiv="refresh" content="0; url=https://regulatorfb.com/newsletter/?utm_source=newsletter&amp;utm_medium=compat&amp;utm_campaign=upgrade">
+    
     <style>
         body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #faf5eb; color: #1e293b; }
         .wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px; text-align: center; }
@@ -23,10 +23,29 @@
     <main class="wrap">
         <section class="card">
             <div class="eyebrow">Regulator F&amp;B</div>
+            
+            <div id="paid" style="display:none;">
+                <h1>Thank you. You are subscribed.</h1>
+                <p>Your PayPal receipt is on its way. Within one business day we will email you from hello@regulatorfb.com to confirm your company profile and activate web app access. Your first brief follows on the next scheduled cycle.</p>
+                <a class="button" href="https://regulatorfb.com/deadline-watchlist/?src=paid_welcome#intake">Set up your company profile now</a>
+                <p class="small">Questions or no email within a business day? Write to hello@regulatorfb.com.</p>
+            </div>
+            <div id="compat">
+            
             <h1>Continue to Regulator F&amp;B access</h1>
-            <p>We are routing newsletter upgrade links through the current Regulator access page while the product is in early access.</p>
+            <p>We are routing newsletter upgrade links through the current Regulator access page.</p>
             <a class="button" href="https://regulatorfb.com/newsletter/?utm_source=newsletter&amp;utm_medium=compat&amp;utm_campaign=upgrade">Continue →</a>
             <p class="small">If you are not redirected automatically, use the button above.</p>
+            
+            </div>
+            <script>
+            (function(){
+              var paid = /[?&]paid=1(&|$)/.test(window.location.search);
+              if (paid) { document.getElementById('paid').style.display='block'; document.getElementById('compat').style.display='none'; }
+              else { window.location.replace("https://regulatorfb.com/newsletter/?utm_source=newsletter\u0026utm_medium=compat\u0026utm_campaign=upgrade"); }
+            })();
+            </script>
+            
         </section>
     </main>
 </body>
